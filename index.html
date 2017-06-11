@@ -5,9 +5,9 @@ title: "Home"
 
 
 {% for post in paginator.posts %}
-<div class="panel {% if post.tags contains 'highlighted' %}panel-danger{% else %}panel-default{% endif %}">
+<div class="panel {% if post.categories contains 'highlighted' %}panel-danger{% else %}panel-default{% endif %}">
 	<div class="panel-body">
-		{% if post.tags contains 'highlighted' %}
+		{% if post.categories contains 'highlighted' %}
 		<span class="glyphicon glyphicon-bookmark pull-right" style="color: #d9534f;"></span>
 		{% endif %}
 
