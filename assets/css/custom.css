@@ -112,6 +112,8 @@ ol#playlist li.active a {
 /* === social === */
 .social-icon img {
 	margin-right: 1em;
+	width: 24px;
+	height: 24px;
 }
 
 
