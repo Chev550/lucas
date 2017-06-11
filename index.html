@@ -7,6 +7,10 @@ title: "Home"
 {% for post in paginator.posts %}
 <div class="panel {% if post.tags contains 'highlighted' %}panel-danger{% else %}panel-default{% endif %}">
 	<div class="panel-body">
+		{% if post.tags contains 'highlighted' %}
+		<span class="glyphicon glyphicon-bookmark pull-right" style="color: #d9534f;"></span>
+		{% endif %}
+
 		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
 		<p class="gray small">
 			{{ post.date | date_to_string }} &sdot;
