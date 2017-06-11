@@ -1,0 +1,11 @@
+{% if page.previous.url %}
+<a class="btn btn-xs btn-default" href="{{ site.baseurl }}{{ page.previous.url }}">&laquo; Prev</a>
+{% else %}
+<span class="btn btn-xs btn-default disabled">&laquo; Prev</span>
+{% endif %}
+
+{% if page.next.url %}
+<a class="btn btn-xs btn-default pull-right" href="{{ site.baseurl }}{{ page.next.url }}">Next &raquo;</a>
+{% else %}
+<span class="btn btn-xs btn-default disabled pull-right">Next &raquo;</span>
+{% endif %}

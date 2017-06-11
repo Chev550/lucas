@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+	<div class="container">
+		{% include header.html %}
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h4>{{ page.title }}</h4>
+						<span class="gray small">
+							{{ page.date | date_to_string }} &sdot;
+							{% include post_tags.html %}
+						</span>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						{{ content }}
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						{% include pages.html %}
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<div class="well">
+					{% include disqus.html %}
+				</div>
+			</div>
+		</div>
+		
+
+		{% include footer.html %}
+	</div>
+</body>
+</html>

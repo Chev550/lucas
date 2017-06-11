@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+</head>
+
+<body>
+	<div class="container">
+		{% include header.html %}
+
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="panel panel-danger">
+					<div class="panel-heading center">
+						<p><img class="user-avatar" src="{{ site.baseurl }}/assets/img/profile.png"></p>
+						<strong>Lucas Li</strong><br>
+						<span class="gray small">
+							LEED AP, Competition Manager
+						</span>
+					</div>
+				</div>
+
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+							<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
+
+							<p>
+								<textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea>
+							</p>
+
+							<button type="submit" class="btn btn-xs btn-primary pull-right">Send</button>
+
+							<input type="file">
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body center small">
+						<a href="{{ site.baseurl }}/archive.html">Archive</a> &sdot;
+						<a href="{{ site.baseurl }}/tags">Tags</a> &sdot;
+						<a href="{{ site.baseurl }}/docs.html">Docs</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				{{ content }}
+			</div>
+
+
+			<div class="col-sm-3 small">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						{% include search.html %}
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="gray">What's going on</p>
+						{% include events.html %}
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="gray">Contact</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope"></span> lucas.li@sdchina.org.cn
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone"></span> +86 159-6224-2054
+						</p>
+						<span class="glyphicon glyphicon-map-marker"></span> 6-3, SOHO II Tower A, Guanghua Road, Chaoyang District, Beijing, 100020
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body social-icon">
+						<p class="gray">Music</p>
+						{% include music.html %}
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body organization">
+						<p class="gray">Organizations</p>
+						<a href="http://www.sdchina.org.cn" target="_blank"><img src="{{ site.baseurl }}/assets/img/logo_sdc.png"></a>
+
+						<a href="http://www.purdue.edu" target="_blank"><img src="{{ site.baseurl }}/assets/img/logo_purdue.png"></a>
+
+						<a href="http://www.tongji.edu.cn" target="_blank"><img src="{{ site.baseurl }}/assets/img/logo_tongji.png"></a>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body social-icon">
+						<p class="gray">Follow me</p>
+						<a href="https://www.facebook.com/lucaslionline" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_facebook.png"></a>
+
+						<a href="http://www.linkedin.com/in/lucaslionline/" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_linkedin.png"></a>
+
+						<a href="https://www.instagram.com/lucaslionline/" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_instagram.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		{% include footer.html %}
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+---
+layout: gallery
+title: "Gallery"
+---
+
+<div class="row">
+	<div class="my-gallery">
+		{% for img in site.gallery %}
+		<figure>
+			<a href="{{ site.baseurl }}/assets/img/gallery/{{ img.name }}.jpg" data-size="{{ img.size }}">
+				<div class="col-sm-6">
+					<img src="{{ site.baseurl }}/assets/img/gallery/{{ img.name }}.jpg">
+				</div>
+			</a>
+			<figcaption>{{ img.txt }}</figcaption>
+		</figure>
+		{% endfor %}
+	</div>
+</div>

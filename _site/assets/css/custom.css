@@ -1,0 +1,138 @@
+/* general ===================================================== */
+body {
+	background: #eee;
+	padding-top: 20px;
+}
+
+footer {
+	color: gray;
+	text-align: center;
+	margin: 10px 0;
+}
+
+
+/* post ========================================================= */
+.footnotes {
+	margin-top: 2em;
+}
+.footnotes:before {
+	content: "References";
+	font-weight: bold;
+}
+.footnotes ol {
+	font-size: 85%;
+	margin-top: 10px;
+}
+.footnotes p {
+	margin: 0;
+}
+
+.pagination {
+	margin: 0;
+}
+
+
+/* widgets ================================================= */
+/* === avatar === */
+.user-avatar {
+	width: 88px;
+	height: 88px;
+	border-radius: 50%;
+	border: 4px solid white;
+}
+
+/* === search === */
+ul.search {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.search li {
+	display: inline-block;
+}
+ul.search li.active a {
+	color: gray;
+}
+ul.search li a {
+	text-decoration: none;
+}
+
+/* === music === */
+audio {
+	width: 100%;
+}
+ol#playlist {
+	margin: 0;
+	padding: 0;
+	background: #eee;
+}
+ol#playlist li {
+	padding: 0.25em 1em;
+	list-style: none;
+}
+ol#playlist li a {
+	text-decoration: none;
+	color: #333;
+}
+ol#playlist li:hover {
+	background: #ccc;
+}
+ol#playlist li:hover a {
+	color: #3071a9;
+}
+ol#playlist li.active {
+	background: #ddd;
+}
+ol#playlist li.active a {
+	color: #428bca;
+}
+
+/* === gallery === */
+.my-gallery {
+	width: 100%;
+	float: left;
+}
+.my-gallery img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 1em;
+}
+.my-gallery figure {
+}
+.my-gallery figcaption {
+	display: none;
+}
+
+/* === organizations === */
+.organization img {
+	height: 40px;
+	width: 40px;
+	margin-right: 1em;
+	border-radius: 50%;
+}
+
+/* === social === */
+.social-icon img {
+	margin-right: 1em;
+}
+
+
+
+/* self-defined ====================================================== */
+.gray {
+	color: gray;
+}
+.center {
+	text-align: center;
+}
+.normalWeight {
+	font-weight: normal;
+}
+.clearance {
+	margin-top: 1em;
+}
+.cover-bg {
+	background: url(../img/bg5.jpg) center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,43 @@
+title: Lucas
+baseurl: /lucas
+markdown: kramdown
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "page:num"
+disqus_shortname: lucaslionline
+
+
+
+
+gallery:
+- {name: "dan_stevens", size: "1080x1160", txt: "Dan Stevens, 11 Sep 2015"}
+- {name: "bowing_to_him", size: "1500x1000", txt: "Bowing To Him, 28 Feb 2015"}
+- {name: "parker_ellis", size: "1150x1250", txt: "Parker Ellis, 04 Oct 2014"}
+- {name: "leonardo_dicaprio", size: "1150x1050", txt: "Leonardo Dicaprio, 18 Jul 2014"}
+- {name: "brokeback_mountain", size: "1500x1000", txt: "Brokeback Mountain, 05 Jun 2014"}
+
+
+timeline:
+- {time: "Aug 2016", place: "Beijing", content: "Started Working at Solar Decathlon China", subcontent: "Competition Manager", logo: "sdc"}
+- {time: "Aug 2015", place: "West Lafayette", content: "Graduated from Purdue University"}
+- {time: "Aug 2013", place: "West Lafayette", content: "Started School at Purdue University", subcontent: "Grad School, Architectural Engineering", logo: "purdue"}
+- {time: "Jul 2012", place: "Shanghai", content: "Graduated from Tongji University"}
+- {time: "Sep 2008", place: "Shanghai", content: "Started School at Tongji University", subcontent: "College, Building Environment and Facilities Engineering", logo: "tongji"}
+- {time: "11 Mar 1990", place: "Shiping", content: "Born"}
+
+
+
+
+#--------------------------------
+# Miscellaneous Section
+music:
+- {name: "Mighty To Save", by: "Hillsong United", src: Hillsong_United-Mighty_To_Save}
+- {name: "Oceans", by: "Hillsong United", src: Hillsong_United-Oceans}
+- {name: "In Christ Alone", by: "Newsboys", src: Newsboys-In_Christ_Alone}
+- {name: "Above All", by: "Michael W. Smith", src: Michael_W._Smith-Above_All}
+- {name: "10,000 Reasons", by: "Matt Redman", src: Matt_Redman-10000_Reasons}
+- {name: "Fires", by: "Matt Redman", src: Matt_Redman-Fires}
+
+
+bookmarks:
+- {name: Covenant Church, url: "http://www.covenantepc.org"}

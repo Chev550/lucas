@@ -1,0 +1,23 @@
+<table class="table table-striped">
+	<tbody>
+		{% for event in site.timeline %}
+		<tr>
+			<td>
+				{% if event.logo %}
+				<img src="{{ site.baseurl }}/assets/img/logo_{{ event.logo }}.png" height="40" width="40">
+				{% endif %}
+			</td>
+			<td style="width: 100%;">
+				<div class="gray small">
+					<span class="glyphicon glyphicon-time"></span> {{ event.time }}
+					<span class="glyphicon glyphicon-map-marker"></span> {{ event.place }}
+				</div>
+				<div class="content">
+					{{ event.content }}<br>
+					<span class="gray small">{{ event.subcontent }}</span>
+				</div>
+			</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>

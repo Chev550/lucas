@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Here is the code template I am using to make a chronological archive1.            “Jekyll archives grouped by date”, mikerowecode. &#8617;      ">
+	<title>Lucas | Group posts by year</title>
+	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+
+	<!-- ====================== PhotoSwipe core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/photoswipe.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/default-skin/default-skin.css">
+
+	<!-- ================== PhotoSwipe core JavaScript ==================== -->
+	<script src="/assets/js/photoswipe.min.js"></script>
+	<script src="/assets/js/photoswipe-ui-default.min.js"></script>
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img class="navbar-brand" src="/assets/img/profile.png">
+				<a class="navbar-brand" href="/">Lucas</a>
+			</div>
+
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/about.html">About</a></li>
+
+					<li><a href="/gallery.html">Gallery</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="dropdown-header">Architectural Engineering</li>
+							<li><a href="#">Building Integrated Solar Thermal Shading System</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Website Development</li>
+							<li><a href="#">Solar Decathlon China</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
+	</nav>
+</header>
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h4>Group posts by year</h4>
+						<span class="gray small">
+							11 May 2016 &sdot;
+							
+
+
+<span class="post-tags"><a href="/tags/#jekyll">#jekyll</a></span>
+
+						</span>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p>Here is the code template I am using to make a chronological archive<sup id="fnref:mik"><a href="#fn:mik" class="footnote">1</a></sup>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">{% for post in site.categories.[page.category] %}
+{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+	
+{% if forloop.first %}
+<span class="nt">&lt;p&gt;</span>{{ year }}<span class="nt">&lt;/p&gt;&lt;ul&gt;</span>
+{% elsif year != nyear %}
+<span class="nt">&lt;/ul&gt;&lt;p&gt;</span>{{ year }}<span class="nt">&lt;/p&gt;&lt;ul&gt;</span>
+{% endif %}
+
+<span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{site.baseurl}}{{post.url}}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;</span>
+{{ post.date | date: "%-m/%-d/%y" }}<span class="nt">&lt;/li&gt;</span>
+{% endfor %}
+<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:mik">
+      <p><a href="http://mikerowecode.com/2010/08/jekyll_archives_grouped_by_year.html">“Jekyll archives grouped by date”</a>, mikerowecode. <a href="#fnref:mik" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						
+<a class="btn btn-xs btn-default" href="/2016/03/20/previous-next-post-within-a-category.html">&laquo; Prev</a>
+
+
+
+<a class="btn btn-xs btn-default pull-right" href="/2017/04/16/pagination.html">Next &raquo;</a>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<div class="well">
+					<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = "lucaslionline"; 
+(function() {
+	var d = document, s = d.createElement('script');
+	s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+})();
+</script>
+
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Lucas Li. All Rights Reserved.
+</footer>
+
+
+	</div>
+</body>
+</html>

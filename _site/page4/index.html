@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<title>Lucas | Home</title>
+	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+
+	<!-- ====================== PhotoSwipe core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/photoswipe.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/default-skin/default-skin.css">
+
+	<!-- ================== PhotoSwipe core JavaScript ==================== -->
+	<script src="/assets/js/photoswipe.min.js"></script>
+	<script src="/assets/js/photoswipe-ui-default.min.js"></script>
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img class="navbar-brand" src="/assets/img/profile.png">
+				<a class="navbar-brand" href="/">Lucas</a>
+			</div>
+
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/about.html">About</a></li>
+
+					<li><a href="/gallery.html">Gallery</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="dropdown-header">Architectural Engineering</li>
+							<li><a href="#">Building Integrated Solar Thermal Shading System</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Website Development</li>
+							<li><a href="#">Solar Decathlon China</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
+	</nav>
+</header>
+
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="panel panel-danger">
+					<div class="panel-heading center">
+						<p><img class="user-avatar" src="/assets/img/profile.png"></p>
+						<strong>Lucas Li</strong><br>
+						<span class="gray small">
+							LEED AP, Competition Manager
+						</span>
+					</div>
+				</div>
+
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+							<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
+
+							<p>
+								<textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea>
+							</p>
+
+							<button type="submit" class="btn btn-xs btn-primary pull-right">Send</button>
+
+							<input type="file">
+						</form>
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body center small">
+						<a href="/archive.html">Archive</a> &sdot;
+						<a href="/tags">Tags</a> &sdot;
+						<a href="/docs.html">Docs</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h4><a href="/2016/05/11/group-posts-by-year.html">Group posts by year</a></h4>
+		<p class="gray small">
+			11 May 2016 &sdot;
+			
+
+
+<span class="post-tags"><a href="/tags/#jekyll">#jekyll</a></span>
+
+		</p>
+		
+		Here is the code template I am using to make a chronological archive1. {% for post in site.categories.[page.category] %} {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %} {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %} {% if forloop.first %} &lt;p&gt;{{ year }}&lt;/p&gt;&lt;ul&gt; {% elsif...
+		<a href="/2016/05/11/group-posts-by-year.html" class="small">more &raquo;</a>
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h4><a href="/2016/03/20/previous-next-post-within-a-category.html">Previous/next post within a category</a></h4>
+		<p class="gray small">
+			20 Mar 2016 &sdot;
+			
+
+
+<span class="post-tags"><a href="/tags/#jekyll">#jekyll</a></span>
+
+		</p>
+		
+		If your blog lists all posts in only one section, you can always use {{post.previous.url}} and {{post.next.url}} to make links to previous and next posts1. However, sometimes we group our posts in defferent sections by category. In this case, post.previous and post.next are no longer handy to navigate because they...
+		<a href="/2016/03/20/previous-next-post-within-a-category.html" class="small">more &raquo;</a>
+	</div>
+</div>
+
+
+
+
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		
+		<div class="pagination">
+			
+			<a class="btn btn-xs btn-default" href="/page3">&laquo; Prev</a>
+			
+
+			
+			
+			<a href="/">1</a>
+			
+			
+			
+			<a href="page2">2</a>
+			
+			
+			
+			<a href="page3">3</a>
+			
+			
+			
+			<em>4</em>
+			
+			
+
+			
+			<span class="btn btn-xs btn-default disabled">Next &raquo;</span>
+			
+		</div>
+		
+	</div>
+</div>
+			</div>
+
+
+			<div class="col-sm-3 small">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<ul class="search pull-right">
+	<li class="active"><a href="#google" data-toggle="tab" aria-expanded="false">Google</a></li>
+	&sdot;
+	<li><a href="#bing" data-toggle="tab" aria-expanded="false">Bing</a></li>
+	&sdot;
+	<li><a href="#baidu" data-toggle="tab" aria-expanded="false">百度</a></li>
+</ul>
+
+
+<p><span class="glyphicon glyphicon-search"></span> Search</p>
+
+
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade active in" id="google">
+		<form method="get" action="https://www.google.com/search" target="_blank">
+			<input type="text" name="q" class="form-control" size="25" placeholder="Google" required>
+		</form>
+	</div>
+
+
+	<div class="tab-pane fade" id="bing">
+		<form method="get" action="http://global.bing.com/search" target="_blank">
+			<input type="text" name="q" class="form-control" size="25" placeholder="Bing" required>
+		</form>
+	</div>
+
+
+	<div class="tab-pane fade" id="baidu">
+		<form method="get" action="https://www.baidu.com/s" target="_blank">
+			<input type="text" name="word" class="form-control" size="25" placeholder="百度一下" required>
+		</form>
+	</div>
+</div>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="gray">What's going on</p>
+						<ul class="nav nav-tabs">
+	<li class="active"><a href="#jun" data-toggle="tab" aria-expanded="false">Jun</a></li>
+
+	<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+			Months <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li><a href="#apr" data-toggle="tab">April</a></li>
+			<li><a href="#may" data-toggle="tab">May</a></li>
+			<li><a href="#jun" data-toggle="tab">June</a></li>
+			<li><a href="#jul" data-toggle="tab">July</a></li>
+			<li><a href="#aug" data-toggle="tab">August</a></li>
+			<li><a href="#sep" data-toggle="tab">September</a></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade" id="apr">
+		<br>
+		<span class="glyphicon glyphicon-certificate"></span>
+		LEED Green Associate &sdot;
+		<span class="gray">28 Apr 2017</span>
+	</div>
+
+
+	<div class="tab-pane fade" id="may">
+		<br>
+		<span class="glyphicon glyphicon-certificate"></span>
+		LEED AP BD+C &sdot;
+		<span class="gray">19 May 2017</span>
+	</div>
+
+
+	<div class="tab-pane fade active in" id="jun">
+		<br>
+	</div>
+
+
+	<div class="tab-pane fade" id="jul">
+		<br>
+		<span class="glyphicon glyphicon-edit"></span>
+		GRE Test &sdot;
+		<span class="gray">9 Jul 2017</span>
+	</div>
+
+
+	<div class="tab-pane fade" id="aug">
+		<br>
+	</div>
+
+
+	<div class="tab-pane fade" id="sep">
+		<br>
+	</div>
+</div>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="gray">Contact</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope"></span> lucas.li@sdchina.org.cn
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone"></span> +86 159-6224-2054
+						</p>
+						<span class="glyphicon glyphicon-map-marker"></span> 6-3, SOHO II Tower A, Guanghua Road, Chaoyang District, Beijing, 100020
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body social-icon">
+						<p class="gray">Music</p>
+						<audio id="audio" preload="auto" tabindex="0" controls=""></audio>
+<ol id="playlist">
+	
+	<li>
+		<a href="/assets/mp3/Hillsong_United-Mighty_To_Save.mp3">
+			Hillsong United - Mighty To Save
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/Hillsong_United-Oceans.mp3">
+			Hillsong United - Oceans
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/Newsboys-In_Christ_Alone.mp3">
+			Newsboys - In Christ Alone
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/Michael_W._Smith-Above_All.mp3">
+			Michael W. Smith - Above All
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/Matt_Redman-10000_Reasons.mp3">
+			Matt Redman - 10,000 Reasons
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/Matt_Redman-Fires.mp3">
+			Matt Redman - Fires
+		</a>
+	</li>
+	
+</ol>
+
+
+<script type="text/javascript">
+var audio;
+var playlist;
+var tracks;
+var current;
+
+init();
+function init(){
+	current = 0;
+	audio = $('#audio');
+	playlist = $('#playlist');
+	tracks = playlist.find('a li');
+	len = tracks.length - 1;
+	audio[0].play();
+	playlist.find('a').click(function(e){
+		e.preventDefault();
+		link = $(this);
+		current = link.parent().index();
+		run(link, audio[0]);
+	});
+	audio[0].addEventListener('ended',function(e){
+		current++;
+		if(current == len){
+			current = 0;
+			link = playlist.find('a')[0];
+		}else{
+			link = playlist.find('a')[current];    
+		}
+		run($(link),audio[0]);
+	});
+}
+function run(link, player){
+	player.src = link.attr('href');
+	par = link.parent();
+	par.addClass('active').siblings().removeClass('active');
+	audio[0].load();
+	audio[0].play();
+}
+</script>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body organization">
+						<p class="gray">Organizations</p>
+						<a href="http://www.sdchina.org.cn" target="_blank"><img src="/assets/img/logo_sdc.png"></a>
+
+						<a href="http://www.purdue.edu" target="_blank"><img src="/assets/img/logo_purdue.png"></a>
+
+						<a href="http://www.tongji.edu.cn" target="_blank"><img src="/assets/img/logo_tongji.png"></a>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body social-icon">
+						<p class="gray">Follow me</p>
+						<a href="https://www.facebook.com/lucaslionline" target="_blank"><img src="/assets/img/icon_facebook.png"></a>
+
+						<a href="http://www.linkedin.com/in/lucaslionline/" target="_blank"><img src="/assets/img/icon_linkedin.png"></a>
+
+						<a href="https://www.instagram.com/lucaslionline/" target="_blank"><img src="/assets/img/icon_instagram.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Lucas Li. All Rights Reserved.
+</footer>
+
+
+	</div>
+</body>
+</html>

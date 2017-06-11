@@ -1,0 +1,33 @@
+<ul class="search pull-right">
+	<li class="active"><a href="#google" data-toggle="tab" aria-expanded="false">Google</a></li>
+	&sdot;
+	<li><a href="#bing" data-toggle="tab" aria-expanded="false">Bing</a></li>
+	&sdot;
+	<li><a href="#baidu" data-toggle="tab" aria-expanded="false">百度</a></li>
+</ul>
+
+
+<p><span class="glyphicon glyphicon-search"></span> Search</p>
+
+
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade active in" id="google">
+		<form method="get" action="https://www.google.com/search" target="_blank">
+			<input type="text" name="q" class="form-control" size="25" placeholder="Google" required>
+		</form>
+	</div>
+
+
+	<div class="tab-pane fade" id="bing">
+		<form method="get" action="http://global.bing.com/search" target="_blank">
+			<input type="text" name="q" class="form-control" size="25" placeholder="Bing" required>
+		</form>
+	</div>
+
+
+	<div class="tab-pane fade" id="baidu">
+		<form method="get" action="https://www.baidu.com/s" target="_blank">
+			<input type="text" name="word" class="form-control" size="25" placeholder="百度一下" required>
+		</form>
+	</div>
+</div>

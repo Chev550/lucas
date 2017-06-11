@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Home"
+---
+
+
+{% for post in paginator.posts %}
+<div class="panel panel-default">
+	<div class="panel-body">
+		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+		<p class="gray small">
+			{{ post.date | date_to_string }} &sdot;
+			{% include post_tags.html %}
+		</p>
+		
+		{{ post.content | strip_html | truncatewords:50 }}
+		<a href="{{ site.baseurl }}{{ post.url }}" class="small">more &raquo;</a>
+	</div>
+</div>
+{% endfor %}
+
+
+
+
+<div class="panel panel-default">
+	<div class="panel-body">
+		{% if paginator.total_pages > 1 %}
+		<div class="pagination">
+			{% if paginator.previous_page %}
+			<a class="btn btn-xs btn-default" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+			{% else %}
+			<span class="btn btn-xs btn-default disabled">&laquo; Prev</span>
+			{% endif %}
+
+			{% for page in (1..paginator.total_pages) %}
+			{% if page == paginator.page %}
+			<em>{{ page }}</em>
+			{% elsif page == 1 %}
+			<a href="{{ site.baseurl }}/">{{ page }}</a>
+			{% else %}
+			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			{% endif %}
+			{% endfor %}
+
+			{% if paginator.next_page %}
+			<a class="btn btn-xs btn-default" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+			{% else %}
+			<span class="btn btn-xs btn-default disabled">Next &raquo;</span>
+			{% endif %}
+		</div>
+		{% endif %}
+	</div>
+</div>

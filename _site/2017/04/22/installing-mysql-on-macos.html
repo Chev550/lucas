@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Oracle’s MySQL is a popular open source relational database management system that is based on Structured Query Language (SQL). Installing MySQL on an Mac is...">
+	<title>Lucas | Installing MySQL on MacOS</title>
+	
+
+	<!-- ====================== Bootstrap core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
+	<!-- Bootstrap theme -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-theme.css">
+	<!-- Custom css -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+	<!-- ================== Bootstrap core JavaScript ==================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!--script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script-->
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+	<script src="/assets/js/jquery-1.11.3.js"></script>
+	<!-- Bootstrap core js -->
+	<script src="/assets/js/bootstrap.min.js"></script>
+	<!-- Custom js -->
+	<script src="/assets/js/custom.js"></script>
+
+
+
+
+	<!-- ====================== PhotoSwipe core css ========================= -->
+	<link rel="stylesheet" type="text/css" href="/assets/css/photoswipe.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/default-skin/default-skin.css">
+
+	<!-- ================== PhotoSwipe core JavaScript ==================== -->
+	<script src="/assets/js/photoswipe.min.js"></script>
+	<script src="/assets/js/photoswipe-ui-default.min.js"></script>
+</head>
+
+</head>
+
+<body>
+	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img class="navbar-brand" src="/assets/img/profile.png">
+				<a class="navbar-brand" href="/">Lucas</a>
+			</div>
+
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="/about.html">About</a></li>
+
+					<li><a href="/gallery.html">Gallery</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="dropdown-header">Architectural Engineering</li>
+							<li><a href="#">Building Integrated Solar Thermal Shading System</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Website Development</li>
+							<li><a href="#">Solar Decathlon China</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
+	</nav>
+</header>
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<h4>Installing MySQL on MacOS</h4>
+						<span class="gray small">
+							22 Apr 2017 &sdot;
+							
+
+
+<span class="post-tags"><a href="/tags/#mysql">#mysql</a></span>
+
+						</span>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p>Oracle’s MySQL is a popular open source relational database management system that is based on Structured Query Language (SQL). Installing MySQL on an Mac is easier than you might expect, particularly if you use the native installation package instead of the TAR package, which requires access and changes to the command line in Terminal mode<sup id="fnref:ins"><a href="#fn:ins" class="footnote">1</a></sup>.</p>
+
+<ol>
+  <li>
+    <p>Download the latest version of MySQL for MacOS from the <a href="https://dev.mysql.com/downloads/mysql/">MySQL website</a>. Select the native package DMG archive version, instead of the TAR version.</p>
+  </li>
+  <li>
+    <p>Double-click the .dmg icon to mount the archive, which contains the installer.</p>
+  </li>
+  <li>
+    <p>Double-click the .pkg icon for the MySQL package installer.</p>
+  </li>
+  <li>
+    <p>Click <code>Continue</code>, <code>Agree</code>, <code>Install</code> to execute the installation using all defaults.</p>
+  </li>
+  <li>
+    <p><strong>Record the temporary password</strong> that displays during the installation process (<code>v7xtQSB?kgSj</code>). This password cannot be recovered. You must save it. After you log in to MySQL, you’ll be prompted to create a new password.</p>
+  </li>
+  <li>
+    <p>Press <code>Close</code> to complete the installation.</p>
+  </li>
+</ol>
+
+<p>Now the MySQL server is installed on the Mac, but it does not load by default. Start MySQL by clicking <code>Start MySQL Server</code> using the MySQL Preference Pane, which was installed during the default installation, from System Preferences. You can configure MySQL to automatically start when you turn on your computer using the MySQL Preference Pane.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:ins">
+      <p><a href="https://www.thoughtco.com/installing-mysql-on-mac-2693866">“Installing MySQL on a Mac is Easier Than You Think”</a>, ThoughtCo. <a href="#fnref:ins" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+					</div>
+				</div>
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						
+<a class="btn btn-xs btn-default" href="/2017/04/16/pagination.html">&laquo; Prev</a>
+
+
+
+<a class="btn btn-xs btn-default pull-right" href="/2017/04/22/making-the-connection-to-mysql-with-java.html">Next &raquo;</a>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-4">
+				<div class="well">
+					<div id="disqus_thread"></div>
+<script type="text/javascript">
+var disqus_shortname = "lucaslionline"; 
+(function() {
+	var d = document, s = d.createElement('script');
+	s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	s.setAttribute('data-timestamp', +new Date());
+	(d.head || d.body).appendChild(s);
+})();
+</script>
+
+				</div>
+			</div>
+		</div>
+		
+
+		<footer class="small">
+	<span>&copy;</span>
+	<span><script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+	Lucas Li. All Rights Reserved.
+</footer>
+
+
+	</div>
+</body>
+</html>
