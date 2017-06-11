@@ -135,7 +135,7 @@
 		</p>
 		
 		With many websites, especially blogs, it’s very common to break the main listing of posts up into smaller lists and display them over multiple pages. Jekyll offers a pagination plugin, so you can automatically generate the appropriate files and folders you need for paginated listings1. For Jekyll 3, include the...
-		<a href="/2017/04/16/pagination.html" class="small">more &raquo;</a>
+		<a href="/2017/04/16/pagination.html" class="small">More &raquo;</a>
 	</div>
 </div>
 
@@ -153,7 +153,7 @@
 		</p>
 		
 		Here is the code template I am using to make a chronological archive1. {% for post in site.categories.[page.category] %} {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %} {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %} {% if forloop.first %} &lt;p&gt;{{ year }}&lt;/p&gt;&lt;ul&gt; {% elsif...
-		<a href="/2016/05/11/group-posts-by-year.html" class="small">more &raquo;</a>
+		<a href="/2016/05/11/group-posts-by-year.html" class="small">More &raquo;</a>
 	</div>
 </div>
 
@@ -171,7 +171,7 @@
 		</p>
 		
 		If your blog lists all posts in only one section, you can always use {{post.previous.url}} and {{post.next.url}} to make links to previous and next posts1. However, sometimes we group our posts in defferent sections by category. In this case, post.previous and post.next are no longer handy to navigate because they...
-		<a href="/2016/03/20/previous-next-post-within-a-category.html" class="small">more &raquo;</a>
+		<a href="/2016/03/20/previous-next-post-within-a-category.html" class="small">More &raquo;</a>
 	</div>
 </div>
 

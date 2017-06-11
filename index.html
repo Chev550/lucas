@@ -5,7 +5,7 @@ title: "Home"
 
 
 {% for post in paginator.posts %}
-<div class="panel panel-default">
+<div class="panel {% if post.tags contains 'highlighted' %}panel-danger{% else %}panel-default{% endif %}">
 	<div class="panel-body">
 		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
 		<p class="gray small">
@@ -15,7 +15,7 @@ title: "Home"
 		</p>
 		
 		{{ post.content | strip_html | truncatewords:50 }}
-		<a href="{{ site.baseurl }}{{ post.url }}" class="small">more &raquo;</a>
+		<a href="{{ site.baseurl }}{{ post.url }}" class="small">More &raquo;</a>
 	</div>
 </div>
 {% endfor %}

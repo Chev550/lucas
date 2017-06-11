@@ -26,10 +26,6 @@ timeline:
 - {time: "11 Mar 1990", place: "Shiping", content: "Born"}
 
 
-
-
-#--------------------------------
-# Miscellaneous Section
 music:
 - {name: "Mighty To Save", by: "Hillsong United", src: Hillsong_United-Mighty_To_Save}
 - {name: "Oceans", by: "Hillsong United", src: Hillsong_United-Oceans}
@@ -38,6 +34,3 @@ music:
 - {name: "10,000 Reasons", by: "Matt Redman", src: Matt_Redman-10000_Reasons}
 - {name: "Fires", by: "Matt Redman", src: Matt_Redman-Fires}
 
-
-bookmarks:
-- {name: Covenant Church, url: "http://www.covenantepc.org"}
