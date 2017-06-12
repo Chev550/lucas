@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Setting up a custom domain for your GitHub site"
-tags:
-- github
+tags: GitHub
 ---
 
 Configure the custom domain on your GitHub Pages site[^ref1]:

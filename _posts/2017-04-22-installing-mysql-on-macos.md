@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Installing MySQL on MacOS"
-tags:
-- mysql
+tags: MySQL
 ---
 
 Oracle's MySQL is a popular open source relational database management system that is based on Structured Query Language (SQL). Installing MySQL on an Mac is easier than you might expect, particularly if you use the native installation package instead of the TAR package, which requires access and changes to the command line in Terminal mode[^ins].

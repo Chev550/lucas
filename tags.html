@@ -15,7 +15,7 @@ permalink: /tags/
 		{% for tag in site.tags %}
 		{% capture tag_name %}{{ tag | first }}{% endcapture %}
 		<a name="{{ tag_name | slugize }}"></a>
-		<span id="#{{ tag_name | slugize }}" class="small gray" style="text-transform: uppercase;">#{{ tag_name }}</span>
+		<span id="#{{ tag_name | slugize }}" class="small gray">#{{ tag_name }}</span>
 		<ul>
 			{% for post in site.tags[tag_name] %}
 			<span class="gray small pull-right">{{ post.date | date_to_string }}</span>

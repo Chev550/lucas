@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "You've got to find what you love"
-categories: highlighted
-tags: speech
+categories: bookmarked
+tags: Speech
 ---
 
 <audio src="{{ site.baseurl }}/assets/mp3/Steve_Jobs-2005-Stanford-Commencement-Address.mp3" controls="controls">

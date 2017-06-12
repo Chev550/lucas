@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Energy and atmosphere"
-tags:
-- leed
+tags: LEED
 ---
 
 

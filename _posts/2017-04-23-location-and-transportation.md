@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Location and transportation"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Site selection

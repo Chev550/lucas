@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Water efficiency"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Outdoor water use

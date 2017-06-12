@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Previous/next post within a category"
-tags: 
-- jekyll
+tags: Jekyll
 ---
 
 If your blog lists all posts in only one section, you can always use `{% raw %}{{post.previous.url}}{% endraw %}` and `{% raw %}{{post.next.url}}{% endraw %}` to make links to previous and next posts[^jek]. However, sometimes we group our posts in defferent sections by category. In this case, `post.previous` and `post.next` are no longer handy to navigate because they will link to posts in other categries which are not supposed to be shown in current section. To navigate previous/next post within one category, the following code template is presented[^tem].

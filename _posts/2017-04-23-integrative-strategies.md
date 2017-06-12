@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Integrative strategies"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Integrative process

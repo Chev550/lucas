@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Sustainable sites"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Site assessment

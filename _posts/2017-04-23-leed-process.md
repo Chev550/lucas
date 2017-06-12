@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "LEED process"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Organization fundamentals

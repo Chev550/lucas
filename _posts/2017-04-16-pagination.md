@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Pagination"
-tags:
-- jekyll
+tags: Jekyll
 ---
 
 With many websites, especially blogs, it's very common to break the main listing of posts up into smaller lists and display them over multiple pages. Jekyll offers a pagination plugin, so you can automatically generate the appropriate files and folders you need for paginated listings[^pag].

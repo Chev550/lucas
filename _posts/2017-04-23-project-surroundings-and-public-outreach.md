@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Project surroundings and public outreach"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Environmental impacts of the built environment

@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Group posts by year"
-tags:
-- jekyll
+tags: Jekyll
 ---
 
 Here is the code template I am using to make a chronological archive[^mik].

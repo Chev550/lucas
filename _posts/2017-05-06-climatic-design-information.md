@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Climatic design information"
-tags:
-- ashrae
+tags: ASHRAE
 ---
 
 #### Annual design conditions

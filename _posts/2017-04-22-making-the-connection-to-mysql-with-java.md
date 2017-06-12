@@ -1,9 +1,7 @@
 ---
 layout: post
 title: "Making the connection to MySQL with Java"
-tags:
-- mysql
-- java
+tags: [MySQL, Java]
 ---
 
 Java has libraries for connecting to and working with SQL databases built right in to the standard Java SDK. This article assumes some knowledge of Java, and that you're here to figure out how to work with a database[^ref].

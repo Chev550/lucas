@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Materials and resources"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Reuse

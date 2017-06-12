@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Indoor environmental quality"
-tags:
-- leed
+tags: LEED
 ---
 
 #### Indoor air quality
