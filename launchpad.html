@@ -5,11 +5,6 @@ title: "Launchpad"
 
 <div class="row">
 	<div class="col-sm-3">
-		<div class="panel panel-info">
-			<div class="panel-body">
-				
-			</div>
-		</div>
 	</div>
 
 
@@ -23,13 +18,12 @@ title: "Launchpad"
 
 
 	<div class="col-sm-3">
-		<div class="panel panel-info">
-			<div class="panel-body">
-				<p class="small gray"><span class="glyphicon glyphicon-inbox"></span> Mailbox</p>
-				<a class="btn btn-sm btn-info btn-block" href="">Gmail</a>
-				<a class="btn btn-sm btn-info btn-block" href="">Outlook</a>
-				<a class="btn btn-sm btn-info btn-block" href="">Alimail</a>
-			</div>
-		</div>
 	</div>
+</div>
+
+
+<div class="row app">
+	{% for app in site.apps %}
+	<a class="btn btn-sm btn-default" href="{{ app.href }}" target="_blank"><img src="{{ site.baseurl }}/assets/img/icon_{{ app.icon }}_48.png"><br>{{ app.name }}</a>
+	{% endfor %}
 </div>
