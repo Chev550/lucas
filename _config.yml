@@ -25,6 +25,14 @@ timeline:
 - {time: "Sep 2008", place: "Shanghai", content: "Started School at Tongji University", subcontent: "College, Building Environment and Facilities Engineering", logo: "tongji"}
 - {time: "11 Mar 1990", place: "Shiping", content: "Born"}
 
+timeline-cn:
+- {time: "2016年8月", place: "北京", content: "入職 中國太陽能十項全能", subcontent: "競賽經理", logo: "sdc"}
+- {time: "2015年8月", place: "西拉法葉", content: "畢業 普渡大學"}
+- {time: "2013年8月", place: "西拉法葉", content: "入學 普渡大學", subcontent: "研究所，建築工程", logo: "purdue"}
+- {time: "2012年7月", place: "上海", content: "畢業 同濟大學"}
+- {time: "2008年9月", place: "上海", content: "入學 同濟大學", subcontent: "大學部，建築環境與設備工程", logo: "tongji"}
+- {time: "1990年3月11日", place: "石屏", content: "出生"}
+
 
 music:
 - {name: "Mighty To Save", by: "Hillsong United", src: Hillsong_United-Mighty_To_Save}
@@ -39,3 +47,8 @@ apps:
 - {name: "Gmail", icon: "gmail", href: ""}
 - {name: "Outlook", icon: "outlook", href: ""}
 - {name: "Alimail", icon: "alimail", href: ""}
+
+
+
+texts:
+- {t: "2016年6月17日", p: "北京", c: "那些遊走"}
