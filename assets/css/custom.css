@@ -140,6 +140,9 @@ ol#playlist li.active a {
 	background-repeat: no-repeat;
 }
 
+.dropdown-menu > li > form {
+	padding: 3px 20px;
+}
 
 .file {
 	display: inline-block;

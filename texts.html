@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Texts"
+---
+
+
+{% for post in site.data.texts %}
+<div class="panel panel-default">
+	<div class="panel-body">
+		{% if post.i %}
+		<p>{{ post.c }}</p>
+		<img class="img-thumbnail" src="{{ site.baseurl }}/assets/img/blog/{{ post.i }}">
+		{% else %}
+		{{ post.c }}
+		{% endif %}
+	</div>
+	<div class="panel-footer gray small">
+		<span class="glyphicon glyphicon-time"></span> {{ post.t }}
+			<span class="glyphicon glyphicon-map-marker"></span> {{ post.p }}
+	</div>
+</div>
+{% endfor %}
