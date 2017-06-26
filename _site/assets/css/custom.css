@@ -131,6 +131,9 @@ ol#playlist li.active a {
 .clearance {
 	margin-top: 1em;
 }
+.clearance2 {
+	margin-bottom: 20px;
+}
 .cover-bg {
 	background: url(../img/bg5.jpg) center center;
 	background-size: cover;
