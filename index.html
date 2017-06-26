@@ -13,8 +13,8 @@ title: "Home"
 		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
 		<p class="gray small">
 			{{ post.date | date_to_string }} &sdot;
-			{% include post_tags.html %} &sdot;
-			<a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"></a>
+			{% include post_tags.html %}
+			<!--a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"></a-->
 		</p>
 		
 		{{ post.content | strip_html | truncatewords:50 }}
