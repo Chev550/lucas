@@ -44,7 +44,7 @@ function hide(){
 // Log in 
 function login() {
 	var p = document.getElementById("password").value;
-	if (p == "mbim111990"){
+	if (p == "ll"){
 		location.href = "texts.html";
 	}
 	else {
