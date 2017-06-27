@@ -48,6 +48,6 @@ function login() {
 		location.href = "texts.html";
 	}
 	else {
-		window.alert("Oops! ID not recognized!")
+		window.alert("ID not recognized!")
 	}
 }
