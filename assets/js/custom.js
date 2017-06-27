@@ -39,3 +39,15 @@ function slideToggle(){
 function hide(){
 	$("#launchpad").hide("");
 }
+
+
+// Log in 
+function login() {
+	var p = document.getElementById("password").value;
+	if (p == "mbim111990"){
+		location.href = "texts.html";
+	}
+	else {
+		window.alert("Oops! ID not recognized!")
+	}
+}

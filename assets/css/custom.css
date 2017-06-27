@@ -140,7 +140,7 @@ ol#playlist li.active a {
 	background-repeat: no-repeat;
 }
 
-.dropdown-menu > li > form {
+.dropdown-input {
 	padding: 3px 20px;
 }
 
