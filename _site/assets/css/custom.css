@@ -164,3 +164,8 @@ ol#playlist li.active a {
 .app a {
 	margin: 15px;
 }
+
+#email-phone,
+#attachment {
+	display: none;
+}

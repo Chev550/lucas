@@ -51,3 +51,20 @@ function login() {
 		window.alert("ID not recognized!")
 	}
 }
+
+
+// Need a reply / Attach a file
+function reply(x){
+	if(x.checked){
+		$("p#email-phone").show("");
+	} else {
+		$("p#email-phone").hide("");
+	}
+}
+function attach(x){
+	if(x.checked){
+		$("p#attachment").show("");
+	} else {
+		$("p#attachment").hide("");
+	}
+}

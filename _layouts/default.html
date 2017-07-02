@@ -28,13 +28,22 @@
 							<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
 
 							<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
+
+							<p class="small">
+								<input type="checkbox" onclick="reply(this)"> Need a reply
+								&nbsp;
+								<input type="checkbox" onclick="attach(this)"> Attach a file
+							</p>
+
+							<p id="email-phone"><input type="text" name="Email/phone" class="form-control" placeholder="Your email or phone"></p>
 							
-							<p><input type="file" class="form-control"></p>
+							<p id="attachment"><input type="file" class="form-control"></p>
 
 							<button type="submit" class="btn btn-xs btn-primary">Send</button>
 						</form>
 					</div>
 				</div>
+
 
 				<div class="panel panel-default">
 					<div class="panel-body center small">

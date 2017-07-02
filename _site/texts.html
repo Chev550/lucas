@@ -87,14 +87,7 @@
 						</ul>
 					</li>
 
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-log-in"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li class="dropdown-input">
-								<input type="password" name="password" id="password" class="form-control" placeholder="Password" required onkeydown="JavaScript:if (event.keyCode==13) login();">
-							</li>
-						</ul>
-					</li>
+					<li><a href="/texts.html"><span class="glyphicon glyphicon-log-in"></span></a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div><!--/.container-fluid -->
@@ -121,13 +114,22 @@
 							<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
 
 							<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
+
+							<p class="small">
+								<input type="checkbox" onclick="reply(this)"> Need a reply
+								&nbsp;
+								<input type="checkbox" onclick="attach(this)"> Attach a file
+							</p>
+
+							<p id="email-phone"><input type="text" name="Email/phone" class="form-control" placeholder="Your email or phone"></p>
 							
-							<p><input type="file" class="form-control"></p>
+							<p id="attachment"><input type="file" class="form-control"></p>
 
 							<button type="submit" class="btn btn-xs btn-primary">Send</button>
 						</form>
 					</div>
 				</div>
+
 
 				<div class="panel panel-default">
 					<div class="panel-body center small">
@@ -140,7 +142,12 @@
 
 
 			<div class="col-sm-6">
-				
+				<script type="text/javascript">
+prompt("ID verification is required:");
+</script>
+
+
+
 <div class="panel panel-default">
 	<div class="panel-body">
 		

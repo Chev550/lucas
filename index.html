@@ -3,6 +3,7 @@ layout: default
 title: "Home"
 ---
 
+
 {% for post in paginator.posts %}
 <div class="panel {% if post.categories contains 'bookmarked' %}panel-danger{% else %}panel-default{% endif %}">
 	<div class="panel-body">
