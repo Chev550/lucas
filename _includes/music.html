@@ -1,6 +1,7 @@
 <audio id="audio" preload="auto" tabindex="0" controls=""></audio>
+
 <ol id="playlist">
-	{% for doc in site.music %}
+	{% for doc in site.data.music.album1 %}
 	<li>
 		<a href="{{ site.baseurl }}/assets/mp3/{{ doc.src }}.mp3">
 			{{ doc.by }} - {{ doc.name }}
@@ -8,6 +9,9 @@
 	</li>
 	{% endfor %}
 </ol>
+
+
+
 
 
 <script type="text/javascript">

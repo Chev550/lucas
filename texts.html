@@ -18,14 +18,18 @@ document.write(password());
 
 {% for post in site.data.texts %}
 <div class="panel panel-default">
+	{% if post.c %}
 	<div class="panel-body">
-		{% if post.i %}
-		<p>{{ post.c }}</p>
-		<img class="img-thumbnail" src="{{ site.baseurl }}/assets/img/blog/{{ post.i }}">
-		{% else %}
 		{{ post.c }}
-		{% endif %}
 	</div>
+	{% endif %}
+
+	{% if post.i %}
+	<div class="panel-body" style="padding: 0;">
+		<img width="100%" src="{{ site.baseurl }}/assets/img/blog/{{ post.i }}">
+	</div>
+	{% endif %}
+
 	<div class="panel-footer gray small">
 		<span class="glyphicon glyphicon-time"></span> {{ post.t }}
 		<span class="glyphicon glyphicon-map-marker"></span> {{ post.p }}
