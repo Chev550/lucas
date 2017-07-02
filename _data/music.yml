@@ -7,21 +7,17 @@ album1:
   by: "The Chainsmokers & Coldplay"
   src: "TheChainsmokersColdplay-SomethingJustLikeThis"
 
+- name: "Lovesick"
+  by: "3union"
+  src: "3union-Lovesick"
+
 - name: "Hey Jude"
   by: "The Beatles"
   src: "TheBeatles-HeyJude"
 
-- name: "夜空中最亮的星"
-  by: "逃跑計劃"
-  src: "TaoPaoJiHua-YeKongZhongZuiLiangDeXing"
-
 - name: "If I Stay"
   by: "Shaun Gibson"
   src: "Shaun_Gibson-If_I_Stay"
-
-- name: "醜八怪"
-  by: "薛之謙"
-  src: "XueZhiQian-ChouBaGuai"
 
 
 
