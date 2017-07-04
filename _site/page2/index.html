@@ -60,9 +60,9 @@
 			
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="/about.html">About</a></li>
+					<li class=""><a href="/about.html">About</a></li>
 
-					<li><a href="/gallery.html">Gallery</a></li>
+					<li class=""><a href="/gallery.html">Gallery</a></li>
 
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
@@ -95,18 +95,41 @@
 </header>
 
 		<div class="row">
-			<div class="col-sm-3">
+			<div class="col-sm-3 small">
 				<div class="panel panel-danger">
 					<div class="panel-heading center">
 						<p><img class="user-avatar" src="/assets/img/profile.png"></p>
-						<strong>Lucas Li</strong><br>
-						<span class="gray small">
+						<h4>Lucas Li</h4>
+						<span class="gray">
 							LEED AP, Competition Manager
 						</span>
 					</div>
 				</div>
 
-
+				<div class="panel panel-success">
+	<div class="panel-heading">
+		<script type="text/javascript">
+		now = new Date();
+		hour = now.getHours();
+		
+		if (hour > 6) {
+			document.write("Good morning! What a wonderful day! :-)")
+		}
+		else if (hour > 12) {
+			document.write("Good afternoon! Have you had lunch? :-)")
+		}
+		else if (hour > 18) {
+			document.write("Good evening! Wanna have dinner together? :-)")
+		}
+		else if (hour > 23) {
+			document.write("It's bed time! Don't stay up too late! :-)")
+		}
+		else {
+			document.write("Sweet dreams! :-)")
+		}
+		</script>
+	</div>
+</div>
 
 				<div class="panel panel-info">
 					<div class="panel-heading">
@@ -115,7 +138,7 @@
 
 							<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
 
-							<p class="small">
+							<p>
 								<input type="checkbox" onclick="reply(this)"> Need a reply
 								&nbsp;
 								<input type="checkbox" onclick="attach(this)"> Attach a file
@@ -132,7 +155,7 @@
 
 
 				<div class="panel panel-default">
-					<div class="panel-body center small">
+					<div class="panel-body center">
 						<a href="/archive.html">Archive</a> &sdot;
 						<a href="/tags">Tags</a> &sdot;
 						<a href="/docs.html">Docs</a>
@@ -285,43 +308,43 @@
 
 			<div class="col-sm-3 small">
 				<div class="panel panel-info">
-					<div class="panel-heading">
-						<ul class="search pull-right">
-	<li class="active"><a href="#google" data-toggle="tab" aria-expanded="false">Google</a></li>
-	&sdot;
-	<li><a href="#bing" data-toggle="tab" aria-expanded="false">Bing</a></li>
-	&sdot;
-	<li><a href="#baidu" data-toggle="tab" aria-expanded="false">百度</a></li>
-</ul>
+	<div class="panel-heading">
+		<ul class="search pull-right">
+			<li class="active"><a href="#google" data-toggle="tab" aria-expanded="false">Google</a></li>
+			&sdot;
+			<li><a href="#bing" data-toggle="tab" aria-expanded="false">Bing</a></li>
+			&sdot;
+			<li><a href="#baidu" data-toggle="tab" aria-expanded="false">百度</a></li>
+		</ul>
 
 
-<p><span class="glyphicon glyphicon-search"></span> Search</p>
+		<p><span class="glyphicon glyphicon-search"></span> Search</p>
 
 
-<div id="myTabContent" class="tab-content">
-	<div class="tab-pane fade active in" id="google">
-		<form method="get" action="https://www.google.com/search" target="_blank">
-			<input type="text" name="q" class="form-control" size="25" placeholder="Google" required>
-		</form>
-	</div>
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="google">
+				<form method="get" action="https://www.google.com/search" target="_blank">
+					<input type="text" name="q" class="form-control" size="25" placeholder="Google" required>
+				</form>
+			</div>
 
 
-	<div class="tab-pane fade" id="bing">
-		<form method="get" action="http://global.bing.com/search" target="_blank">
-			<input type="text" name="q" class="form-control" size="25" placeholder="Bing" required>
-		</form>
-	</div>
+			<div class="tab-pane fade" id="bing">
+				<form method="get" action="http://global.bing.com/search" target="_blank">
+					<input type="text" name="q" class="form-control" size="25" placeholder="Bing" required>
+				</form>
+			</div>
 
 
-	<div class="tab-pane fade" id="baidu">
-		<form method="get" action="https://www.baidu.com/s" target="_blank">
-			<input type="text" name="word" class="form-control" size="25" placeholder="百度一下" required>
-		</form>
+			<div class="tab-pane fade" id="baidu">
+				<form method="get" action="https://www.baidu.com/s" target="_blank">
+					<input type="text" name="word" class="form-control" size="25" placeholder="百度一下" required>
+				</form>
+			</div>
+		</div>
 	</div>
 </div>
-					</div>
-				</div>
-
+					
 
 				<div class="panel panel-default">
 					<div class="panel-body">

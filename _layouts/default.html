@@ -9,18 +9,18 @@
 		{% include header.html %}
 
 		<div class="row">
-			<div class="col-sm-3">
+			<div class="col-sm-3 small">
 				<div class="panel panel-danger">
 					<div class="panel-heading center">
 						<p><img class="user-avatar" src="{{ site.baseurl }}/assets/img/profile.png"></p>
-						<strong>Lucas Li</strong><br>
-						<span class="gray small">
+						<h4>Lucas Li</h4>
+						<span class="gray">
 							LEED AP, Competition Manager
 						</span>
 					</div>
 				</div>
 
-
+				{% include widgets/greetings.html %}
 
 				<div class="panel panel-info">
 					<div class="panel-heading">
@@ -29,7 +29,7 @@
 
 							<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
 
-							<p class="small">
+							<p>
 								<input type="checkbox" onclick="reply(this)"> Need a reply
 								&nbsp;
 								<input type="checkbox" onclick="attach(this)"> Attach a file
@@ -46,7 +46,7 @@
 
 
 				<div class="panel panel-default">
-					<div class="panel-body center small">
+					<div class="panel-body center">
 						<a href="{{ site.baseurl }}/archive.html">Archive</a> &sdot;
 						<a href="{{ site.baseurl }}/tags">Tags</a> &sdot;
 						<a href="{{ site.baseurl }}/docs.html">Docs</a>
@@ -61,12 +61,8 @@
 
 
 			<div class="col-sm-3 small">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						{% include search.html %}
-					</div>
-				</div>
-
+				{% include widgets/search.html %}
+					
 
 				<div class="panel panel-default">
 					<div class="panel-body">
