@@ -8,9 +8,11 @@
   p: Beijing
   c: "既然選擇了遠方，便只顧風雨兼程"
   i: img_2.jpg
+  size: "1024x1024"
 
 
 - t: 2 Jul 2016
   p: Shanghai
   c: "Some of us get dipped in flat, some in satin, some in gloss. But every once in a while, you find someone who's iridescent, and when you do, nothing will ever compare."
   i: img_1.jpg
+  size: "1024x768"

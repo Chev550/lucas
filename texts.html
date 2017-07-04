@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: gallery
 title: "Texts"
 ---
 
@@ -16,23 +16,31 @@ document.write(password());
 </script> 
 
 
-{% for post in site.data.texts %}
-<div class="panel panel-default">
-	{% if post.c %}
-	<div class="panel-body">
-		{{ post.c }}
-	</div>
-	{% endif %}
+<div class="my-gallery">
+	{% for post in site.data.texts %}
+	<div class="panel panel-default">
+		{% if post.c %}
+		<div class="panel-body">
+			{{ post.c }}
+		</div>
+		{% endif %}
 
-	{% if post.i %}
-	<div class="panel-body" style="padding: 0;">
-		<img width="100%" src="{{ site.baseurl }}/assets/img/blog/{{ post.i }}">
-	</div>
-	{% endif %}
+		{% if post.i %}
+		<div class="panel-body" style="padding: 0;">
+			<figure>
+				<a href="{{ site.baseurl }}/assets/img/blog/{{ post.i }}" data-size="{{ post.size }}">
+					<img src="{{ site.baseurl }}/assets/img/blog/{{ post.i }}">
+				</a>
+				<figcaption>{{ post.c }}</figcaption>
+			</figure>
+		</div>
+		{% endif %}
 
-	<div class="panel-footer gray small">
-		<span class="glyphicon glyphicon-time"></span> {{ post.t }}
-		<span class="glyphicon glyphicon-map-marker"></span> {{ post.p }}
+		<div class="panel-footer gray small">
+			<span class="glyphicon glyphicon-time"></span> {{ post.t }}
+			&nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> {{ post.p }}
+		</div>
 	</div>
+	{% endfor %}
 </div>
-{% endfor %}

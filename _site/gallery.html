@@ -95,59 +95,172 @@
 </header>
 
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-3">
+				<div class="panel panel-danger">
+					<div class="panel-heading center">
+						<p><img class="user-avatar" src="/assets/img/profile.png"></p>
+						<strong>Lucas Li</strong><br>
+						<span class="gray small">
+							LEED AP, Competition Manager
+						</span>
+					</div>
+				</div>
+
+
+
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+							<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
+
+							<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
+
+							<p class="small">
+								<input type="checkbox" onclick="reply(this)"> Need a reply
+								&nbsp;
+								<input type="checkbox" onclick="attach(this)"> Attach a file
+							</p>
+
+							<p id="email-phone"><input type="text" name="Reply to" class="form-control" placeholder="Your email or phone"></p>
+							
+							<p id="attachment"><input type="file" class="form-control"></p>
+
+							<button type="submit" class="btn btn-xs btn-primary">Send</button>
+						</form>
+					</div>
+				</div>
+
+
 				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="row">
-	<div class="my-gallery">
-		
-		<figure>
-			<a href="/assets/img/gallery/dan_stevens.jpg" data-size="1080x1160">
-				<div class="col-sm-4">
+					<div class="panel-body center small">
+						<a href="/archive.html">Archive</a> &sdot;
+						<a href="/tags">Tags</a> &sdot;
+						<a href="/docs.html">Docs</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-sm-6">
+				<div class="my-gallery">
+	
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Dan Stevens
+		</div>
+
+		<div class="panel-body" style="padding: 0;">
+			<figure>
+				<a href="/assets/img/gallery/dan_stevens.jpg" data-size="1080x1160">
 					<img src="/assets/img/gallery/dan_stevens.jpg">
-				</div>
-			</a>
-			<figcaption>Dan Stevens, 11 Sep 2015</figcaption>
-		</figure>
-		
-		<figure>
-			<a href="/assets/img/gallery/bowing_to_him.jpg" data-size="1500x1000">
-				<div class="col-sm-4">
-					<img src="/assets/img/gallery/bowing_to_him.jpg">
-				</div>
-			</a>
-			<figcaption>Bowing To Him, 28 Feb 2015</figcaption>
-		</figure>
-		
-		<figure>
-			<a href="/assets/img/gallery/parker_ellis.jpg" data-size="1150x1250">
-				<div class="col-sm-4">
-					<img src="/assets/img/gallery/parker_ellis.jpg">
-				</div>
-			</a>
-			<figcaption>Parker Ellis, 04 Oct 2014</figcaption>
-		</figure>
-		
-		<figure>
-			<a href="/assets/img/gallery/leonardo_dicaprio.jpg" data-size="1150x1050">
-				<div class="col-sm-4">
-					<img src="/assets/img/gallery/leonardo_dicaprio.jpg">
-				</div>
-			</a>
-			<figcaption>Leonardo Dicaprio, 18 Jul 2014</figcaption>
-		</figure>
-		
-		<figure>
-			<a href="/assets/img/gallery/brokeback_mountain.jpg" data-size="1500x1000">
-				<div class="col-sm-4">
-					<img src="/assets/img/gallery/brokeback_mountain.jpg">
-				</div>
-			</a>
-			<figcaption>Brokeback Mountain, 05 Jun 2014</figcaption>
-		</figure>
-		
+				</a>
+				<figcaption>Dan Stevens</figcaption>
+			</figure>
+		</div>
+
+		<div class="panel-footer gray small">
+			<span class="glyphicon glyphicon-time"></span> 11 Sep 2015
+			&nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> Lafayette
+			&nbsp;
+			<span class="glyphicon glyphicon-retweet"></span> 1080x1160
+		</div>
 	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Bowing To Him
+		</div>
+
+		<div class="panel-body" style="padding: 0;">
+			<figure>
+				<a href="/assets/img/gallery/bowing_to_him.jpg" data-size="1500x1000">
+					<img src="/assets/img/gallery/bowing_to_him.jpg">
+				</a>
+				<figcaption>Bowing To Him</figcaption>
+			</figure>
+		</div>
+
+		<div class="panel-footer gray small">
+			<span class="glyphicon glyphicon-time"></span> 28 Feb 2015
+			&nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> Lafayette
+			&nbsp;
+			<span class="glyphicon glyphicon-retweet"></span> 1500x1000
+		</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Parker Ellis
+		</div>
+
+		<div class="panel-body" style="padding: 0;">
+			<figure>
+				<a href="/assets/img/gallery/parker_ellis.jpg" data-size="1150x1250">
+					<img src="/assets/img/gallery/parker_ellis.jpg">
+				</a>
+				<figcaption>Parker Ellis</figcaption>
+			</figure>
+		</div>
+
+		<div class="panel-footer gray small">
+			<span class="glyphicon glyphicon-time"></span> 04 Oct 2014
+			&nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> Lafayette
+			&nbsp;
+			<span class="glyphicon glyphicon-retweet"></span> 1150x1250
+		</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Leonardo Dicaprio
+		</div>
+
+		<div class="panel-body" style="padding: 0;">
+			<figure>
+				<a href="/assets/img/gallery/leonardo_dicaprio.jpg" data-size="1150x1050">
+					<img src="/assets/img/gallery/leonardo_dicaprio.jpg">
+				</a>
+				<figcaption>Leonardo Dicaprio</figcaption>
+			</figure>
+		</div>
+
+		<div class="panel-footer gray small">
+			<span class="glyphicon glyphicon-time"></span> 18 Jul 2014
+			&nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> West Lafayette
+			&nbsp;
+			<span class="glyphicon glyphicon-retweet"></span> 1150x1050
+		</div>
+	</div>
+	
+	<div class="panel panel-default">
+		<div class="panel-body">
+			Brokeback Mountain
+		</div>
+
+		<div class="panel-body" style="padding: 0;">
+			<figure>
+				<a href="/assets/img/gallery/brokeback_mountain.jpg" data-size="1500x1000">
+					<img src="/assets/img/gallery/brokeback_mountain.jpg">
+				</a>
+				<figcaption>Brokeback Mountain</figcaption>
+			</figure>
+		</div>
+
+		<div class="panel-footer gray small">
+			<span class="glyphicon glyphicon-time"></span> 05 Jun 2014
+			&nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> West Lafayette
+			&nbsp;
+			<span class="glyphicon glyphicon-retweet"></span> 1500x1000
+		</div>
+	</div>
+	
 </div>
+
 
 
 
@@ -217,24 +330,272 @@
 
 <script src="/assets/js/photoswipe.my.js"></script>
 
+			</div>
+
+
+			<div class="col-sm-3 small">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<ul class="search pull-right">
+	<li class="active"><a href="#google" data-toggle="tab" aria-expanded="false">Google</a></li>
+	&sdot;
+	<li><a href="#bing" data-toggle="tab" aria-expanded="false">Bing</a></li>
+	&sdot;
+	<li><a href="#baidu" data-toggle="tab" aria-expanded="false">百度</a></li>
+</ul>
+
+
+<p><span class="glyphicon glyphicon-search"></span> Search</p>
+
+
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade active in" id="google">
+		<form method="get" action="https://www.google.com/search" target="_blank">
+			<input type="text" name="q" class="form-control" size="25" placeholder="Google" required>
+		</form>
+	</div>
+
+
+	<div class="tab-pane fade" id="bing">
+		<form method="get" action="http://global.bing.com/search" target="_blank">
+			<input type="text" name="q" class="form-control" size="25" placeholder="Bing" required>
+		</form>
+	</div>
+
+
+	<div class="tab-pane fade" id="baidu">
+		<form method="get" action="https://www.baidu.com/s" target="_blank">
+			<input type="text" name="word" class="form-control" size="25" placeholder="百度一下" required>
+		</form>
+	</div>
+</div>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="gray">Calendar</p>
+						<ul class="nav nav-tabs">
+	<li class="active"><a href="#jun" data-toggle="tab" aria-expanded="false">June</a></li>
+
+	<li class="dropdown">
+		<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+			Months <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li><a href="#jan" data-toggle="tab">January</a></li>
+			<li><a href="#feb" data-toggle="tab">February</a></li>
+			<li><a href="#mar" data-toggle="tab">March</a></li>
+			<li><a href="#apr" data-toggle="tab">April</a></li>
+			<li><a href="#may" data-toggle="tab">May</a></li>
+			<li><a href="#jun" data-toggle="tab">June</a></li>
+			<li><a href="#jul" data-toggle="tab">July</a></li>
+			<li><a href="#aug" data-toggle="tab">August</a></li>
+			<li><a href="#sep" data-toggle="tab">September</a></li>
+			<li><a href="#oct" data-toggle="tab">October</a></li>
+			<li><a href="#nov" data-toggle="tab">November</a></li>
+			<li><a href="#dec" data-toggle="tab">December</a></li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade" id="jan">
+		<br>
+	</div>
+
+	<div class="tab-pane fade" id="feb">
+		<br>
+	</div>
+
+	<div class="tab-pane fade" id="mar">
+		<br>
+	</div>
+
+	<div class="tab-pane fade" id="apr">
+		<br>
+		<span class="glyphicon glyphicon-certificate"></span>
+		LEED Green Associate &sdot;
+		<span class="gray">28 Apr 2017</span>
+	</div>
+
+
+	<div class="tab-pane fade" id="may">
+		<br>
+		<span class="glyphicon glyphicon-certificate"></span>
+		LEED AP BD+C &sdot;
+		<span class="gray">19 May 2017</span>
+	</div>
+
+
+	<div class="tab-pane fade active in" id="jun">
+		<br>
+		Vocabulary
+	</div>
+
+
+	<div class="tab-pane fade" id="jul">
+		<br>
+		<span class="glyphicon glyphicon-edit"></span>
+		GRE Test &sdot;
+		<span class="gray">9 Jul 2017</span>
+	</div>
+
+
+	<div class="tab-pane fade" id="aug">
+		<br>
+	</div>
+
+
+	<div class="tab-pane fade" id="sep">
+		<br>
+	</div>
+
+	<div class="tab-pane fade" id="oct">
+		<br>
+	</div>
+
+	<div class="tab-pane fade" id="nov">
+		<br>
+	</div>
+
+	<div class="tab-pane fade" id="dec">
+		<br>
+	</div>
+</div>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="gray">Contact</p>
+						<p>
+							<span class="glyphicon glyphicon-envelope"></span> lucas.li@sdchina.org.cn
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone"></span> +86 159-6224-2054
+						</p>
+						<span class="glyphicon glyphicon-map-marker"></span> 6-3, SOHO II Tower A, Guanghua Road, Chaoyang District, Beijing, 100020
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<p class="gray">Music</p>
+						<audio id="audio" preload="auto" tabindex="0" controls=""></audio>
+
+<ol id="playlist">
+	
+	<li>
+		<a href="/assets/mp3/OneRepublic-Love_Runs_Out.mp3">
+			OneRepublic - Love Runs Out
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/TheChainsmokersColdplay-SomethingJustLikeThis.mp3">
+			The Chainsmokers & Coldplay - Something Just Like This
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/3union-Lovesick.mp3">
+			3union - Lovesick
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/TheBeatles-HeyJude.mp3">
+			The Beatles - Hey Jude
+		</a>
+	</li>
+	
+	<li>
+		<a href="/assets/mp3/Shaun_Gibson-If_I_Stay.mp3">
+			Shaun Gibson - If I Stay
+		</a>
+	</li>
+	
+</ol>
+
+
+
+
+
+<script type="text/javascript">
+var audio;
+var playlist;
+var tracks;
+var current;
+
+init();
+function init(){
+	current = 0;
+	audio = $('#audio');
+	playlist = $('#playlist');
+	tracks = playlist.find('a li');
+	len = tracks.length - 1;
+	audio[0].play();
+	playlist.find('a').click(function(e){
+		e.preventDefault();
+		link = $(this);
+		current = link.parent().index();
+		run(link, audio[0]);
+	});
+	audio[0].addEventListener('ended',function(e){
+		current++;
+		if(current == len){
+			current = 0;
+			link = playlist.find('a')[0];
+		}else{
+			link = playlist.find('a')[current];    
+		}
+		run($(link),audio[0]);
+	});
+}
+function run(link, player){
+	player.src = link.attr('href');
+	par = link.parent();
+	par.addClass('active').siblings().removeClass('active');
+	audio[0].load();
+	audio[0].play();
+}
+</script>
+					</div>
+				</div>				
+
+
+				<div class="panel panel-default">
+					<div class="panel-body organization">
+						<p class="gray">Organizations</p>
+						<a href="http://www.sdchina.org.cn" target="_blank"><img src="/assets/img/logo_sdc.png"></a>
+
+						<a href="http://www.purdue.edu" target="_blank"><img src="/assets/img/logo_purdue.png"></a>
+
+						<a href="http://www.tongji.edu.cn" target="_blank"><img src="/assets/img/logo_tongji.png"></a>
+					</div>
+				</div>
+
+
+				<div class="panel panel-default">
+					<div class="panel-body social-icon">
+						<p class="gray">Follow Me</p>
+						<a href="https://www.facebook.com/lucaslionline" target="_blank"><img src="/assets/img/icon_facebook.png"></a>
+
+						<a href="http://www.linkedin.com/in/lucaslionline/" target="_blank"><img src="/assets/img/icon_linkedin.png"></a>
+
+						<a href="https://www.instagram.com/lucaslionline/" target="_blank"><img src="/assets/img/icon_instagram.png"></a>
 					</div>
 				</div>
 			</div>
-
-
-			<div class="col-sm-4">
-				<div class="well">
-					<script>
-var idcomments_acct = 'cdfd1c68f02584c9aeaa4ac7b7747ccd';
-var idcomments_post_id;
-var idcomments_post_url;
-</script>
-<span id="IDCommentsPostTitle" style="display:none"></span>
-<script type='text/javascript' src='https://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-				</div>
-			</div>
 		</div>
-		
+
 
 		<footer class="small">
 	<span>&copy;</span>
@@ -263,5 +624,7 @@ alt="shopify site analytics"></a></div></noscript>
 
 
 	</div>
+
+	<script id="dsq-count-scr" src="//lucaslionline.disqus.com/count.js" async></script>
 </body>
 </html>

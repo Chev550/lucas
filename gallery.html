@@ -3,17 +3,30 @@ layout: gallery
 title: "Gallery"
 ---
 
-<div class="row">
-	<div class="my-gallery">
-		{% for img in site.gallery %}
-		<figure>
-			<a href="{{ site.baseurl }}/assets/img/gallery/{{ img.name }}.jpg" data-size="{{ img.size }}">
-				<div class="col-sm-4">
+
+<div class="my-gallery">
+	{% for img in site.data.gallery %}
+	<div class="panel panel-default">
+		<div class="panel-body">
+			{{ img.title }}
+		</div>
+
+		<div class="panel-body" style="padding: 0;">
+			<figure>
+				<a href="{{ site.baseurl }}/assets/img/gallery/{{ img.name }}.jpg" data-size="{{ img.size }}">
 					<img src="{{ site.baseurl }}/assets/img/gallery/{{ img.name }}.jpg">
-				</div>
-			</a>
-			<figcaption>{{ img.txt }}</figcaption>
-		</figure>
-		{% endfor %}
+				</a>
+				<figcaption>{{ img.title }}</figcaption>
+			</figure>
+		</div>
+
+		<div class="panel-footer gray small">
+			<span class="glyphicon glyphicon-time"></span> {{ img.date }}
+			&nbsp;
+			<span class="glyphicon glyphicon-map-marker"></span> {{ img.place }}
+			&nbsp;
+			<span class="glyphicon glyphicon-retweet"></span> {{ img.size }}
+		</div>
 	</div>
+	{% endfor %}
 </div>

@@ -8,15 +8,6 @@ disqus_shortname: lucaslionline
 
 
 
-
-gallery:
-- {name: "dan_stevens", size: "1080x1160", txt: "Dan Stevens, 11 Sep 2015"}
-- {name: "bowing_to_him", size: "1500x1000", txt: "Bowing To Him, 28 Feb 2015"}
-- {name: "parker_ellis", size: "1150x1250", txt: "Parker Ellis, 04 Oct 2014"}
-- {name: "leonardo_dicaprio", size: "1150x1050", txt: "Leonardo Dicaprio, 18 Jul 2014"}
-- {name: "brokeback_mountain", size: "1500x1000", txt: "Brokeback Mountain, 05 Jun 2014"}
-
-
 timeline:
 - {time: "Aug 2016", place: "Beijing", content: "Started Working at Solar Decathlon China", subcontent: "Competition Manager", logo: "sdc"}
 - {time: "Aug 2015", place: "West Lafayette", content: "Graduated from Purdue University"}
