@@ -1,0 +1,61 @@
+---
+layout: default
+title: "About"
+---
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Profile</h3>
+	</div>
+	<div class="panel-body">
+		{% include profile.html %}
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Experience</h3>
+	</div>
+	<div class="panel-body">
+		{% include timeline.html %}
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Projects</h3>
+	</div>
+	<div class="panel-body">
+		{% include projects.html %}
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Publications</h3>
+	</div>
+	<div class="panel-body">
+		{% include publications.html %}
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Certifications</h3>
+	</div>
+	<div class="panel-body">
+		{% include certifications.html %}
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h3 class="panel-title">Education</h3>
+	</div>
+	<div class="panel-body">
+		{% include education.html %}
+	</div>
+	<div class="panel-footer">
+		<a class="btn btn-xs btn-default" href="{{ site.baseurl }}/about.html">Collapse</a>
+	</div>
+</div>

@@ -8,13 +8,22 @@ title: "About"
 		<ul class="nav nav-tabs">
 			<li class="active"><a href="#profile" data-toggle="tab" aria-expanded="false">Profile</a></li>
 
-			<li class=""><a href="#timeline" data-toggle="tab" aria-expanded="false">Timeline</a></li>
+			<li><a href="#timeline" data-toggle="tab" aria-expanded="false">Experience</a></li>
 
-			<li class=""><a href="#projects" data-toggle="tab" aria-expanded="false">Projects</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+					Accomplishments <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#projects" data-toggle="tab" aria-expanded="false">Projects</a></li>
 
-			<li class=""><a href="#publications" data-toggle="tab" aria-expanded="false">Publications</a></li>
+					<li><a href="#publications" data-toggle="tab" aria-expanded="false">Publications</a></li>
 
-			<li class=""><a href="#education" data-toggle="tab" aria-expanded="false">Education</a></li>
+					<li><a href="#certifications" data-toggle="tab" aria-expanded="false">Certifications</a></li>
+				</ul>
+			</li>
+
+			<li><a href="#education" data-toggle="tab" aria-expanded="false">Education</a></li>
 		</ul>
 
 
@@ -39,10 +48,20 @@ title: "About"
 				{% include publications.html %}
 			</div>
 
+			<div class="tab-pane fade" id="certifications">
+				<br>
+				{% include certifications.html %}
+			</div>
+
 			<div class="tab-pane fade" id="education">
 				<br>
 				{% include education.html %}
 			</div>
 		</div>
+	</div>
+
+
+	<div class="panel-footer">
+		<a class="btn btn-xs btn-default" href="{{ site.baseurl }}/about2.html">Expand</a>
 	</div>
 </div>
