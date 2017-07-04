@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<title>Lucas | Launchpad</title>
+	<title>Lucas | Widgets</title>
 	
 
 	<!-- ====================== Bootstrap core css ========================= -->
@@ -42,12 +42,61 @@
 
 <body>
 	<div class="container">
+		<header>
+	<!-- Static navbar -->
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<img class="navbar-brand" src="/assets/img/profile.png">
+				<a class="navbar-brand" href="/">Lucas</a>
+			</div>
+
+			
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class=""><a href="/about.html">About</a></li>
+
+					<li class=""><a href="/gallery.html">Gallery</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="dropdown-header">Architectural Engineering</li>
+							<li><a href="/pages/project_1.html">Building Integrated Solar Thermal Shading System</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Website Development</li>
+							<li><a href="https://lucaslionline.github.io/service/" target="_blank">Solar Decathlon China</a></li>
+						</ul>
+					</li>
+
+					<li class="active"><a href="/widgets.html">Widgets</a></li>
+				</ul>
+
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-inbox"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="https://mail.google.com" target="_blank"><img src="/assets/img/icon_gmail.png"> Gmail</a></li>
+							<li><a href="https://outlook.live.com/owa/" target="_blank"><img src="/assets/img/icon_outlook.png"> Outlook</a></li>
+							<li><a href="http://mail.525j.com.cn" target="_blank"><img src="/assets/img/icon_alimail.png"> Alimail</a></li>
+						</ul>
+					</li>
+
+					<li><a href="/texts.html"><span class="glyphicon glyphicon-log-in"></span></a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div><!--/.container-fluid -->
+	</nav>
+</header>
 
 		<div class="row">
-	<div class="col-sm-3">
-	</div>
-
-
 	<div class="col-sm-6">
 		<div class="panel panel-info">
 	<div class="panel-heading">
@@ -93,17 +142,9 @@
 
 	<div class="col-sm-3">
 	</div>
-</div>
 
-
-<div class="row app">
-	
-	<a class="btn btn-sm btn-default" href="" target="_blank"><img src="/assets/img/icon_gmail_48.png"><br>Gmail</a>
-	
-	<a class="btn btn-sm btn-default" href="" target="_blank"><img src="/assets/img/icon_outlook_48.png"><br>Outlook</a>
-	
-	<a class="btn btn-sm btn-default" href="" target="_blank"><img src="/assets/img/icon_alimail_48.png"><br>Alimail</a>
-	
+	<div class="col-sm-3">
+	</div>
 </div>
 
 	</div>
