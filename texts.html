@@ -19,27 +19,29 @@ document.write(password());
 <div class="my-gallery">
 	{% for post in site.data.texts %}
 	<div class="panel panel-default">
-		{% if post.c %}
+		{% if post.text %}
 		<div class="panel-body">
-			{{ post.c }}
+			{{ post.text }}
 		</div>
 		{% endif %}
 
-		{% if post.i %}
+		{% if post.img %}
 		<div class="panel-body" style="padding: 0;">
 			<figure>
-				<a href="{{ site.baseurl }}/assets/img/blog/{{ post.i }}" data-size="{{ post.size }}">
-					<img src="{{ site.baseurl }}/assets/img/blog/{{ post.i }}">
+				<a href="{{ site.baseurl }}/assets/img/blog/{{ post.img }}" data-size="{{ post.size }}">
+					<img src="{{ site.baseurl }}/assets/img/blog/{{ post.img }}">
 				</a>
-				<figcaption>{{ post.c }}</figcaption>
+				<figcaption>{{ post.text }}</figcaption>
 			</figure>
 		</div>
 		{% endif %}
 
 		<div class="panel-footer gray small">
-			<span class="glyphicon glyphicon-time"></span> {{ post.t }}
+			<span class="glyphicon glyphicon-time"></span> {{ post.date }}
 			&nbsp;
-			<span class="glyphicon glyphicon-map-marker"></span> {{ post.p }}
+			<span class="glyphicon glyphicon-map-marker"></span> {{ post.place }}
+			&nbsp;
+			<span class="glyphicon glyphicon-retweet"></span> {{ post.size }}
 		</div>
 	</div>
 	{% endfor %}
