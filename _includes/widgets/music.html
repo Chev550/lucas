@@ -1,14 +1,19 @@
-<audio id="audio" preload="auto" tabindex="0" controls=""></audio>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<p class="gray">Music</p>
+		<audio id="audio" preload="auto" tabindex="0" controls=""></audio>
 
-<ol id="playlist">
-	{% for doc in site.data.music.album1 %}
-	<li>
-		<a href="{{ site.baseurl }}/assets/mp3/{{ doc.src }}.mp3">
-			{{ doc.by }} - {{ doc.name }}
-		</a>
-	</li>
-	{% endfor %}
-</ol>
+		<ol id="playlist">
+			{% for doc in site.data.music.album1 %}
+			<li>
+				<a href="{{ site.baseurl }}/assets/mp3/{{ doc.src }}.mp3">
+					{{ doc.by }} - {{ doc.name }}
+				</a>
+			</li>
+			{% endfor %}
+		</ol>
+	</div>
+</div>				
 
 
 
