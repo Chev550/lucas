@@ -116,22 +116,22 @@
 		<script type="text/javascript">
 		now = new Date();
 		hour = now.getHours();
-		if (hour > 4 && hour < 7) {
+		if (hour >= 4 && hour < 7) {
 			document.write("You get up early today. :-)")
 		}
-		else if (hour < 12) {
+		else if (hour >= 7 && hour < 12) {
 			document.write("Good morning! What a wonderful day! :-)")
 		}
-		else if (hour < 18) {
+		else if (hour >= 12 && hour < 18) {
 			document.write("Good afternoon! Have you had lunch, yet? :-)")
 		}
-		else if (hour < 20) {
+		else if (hour >= 18 && hour < 20) {
 			document.write("Wanna have dinner together? :-)")
 		}
-		else if (hour < 23) {
+		else if (hour >= 20 && hour < 23) {
 			document.write("Good evening! Why not relax youself a bit? :-)")
 		}
-		else if (hour == 23) {
+		else if (hour >= 23) {
 			document.write("It's bed time! Don't stay up too late! :-)")
 		}
 		else {
