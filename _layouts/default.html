@@ -22,27 +22,7 @@
 
 				{% include widgets/greetings.html %}
 
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
-							<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
-
-							<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
-
-							<p>
-								<input type="checkbox" onclick="reply(this)"> Need a reply
-								&nbsp;
-								<input type="checkbox" onclick="attach(this)"> Attach a file
-							</p>
-
-							<p id="email-phone"><input type="text" name="Reply to" class="form-control" placeholder="Your email or phone"></p>
-							
-							<p id="attachment"><input type="file" class="form-control"></p>
-
-							<button type="submit" class="btn btn-xs btn-primary">Send</button>
-						</form>
-					</div>
-				</div>
+				{% include widgets/say_hello.html %}
 
 
 				<div class="panel panel-default">
@@ -62,14 +42,9 @@
 
 			<div class="col-sm-3 small">
 				{% include widgets/search.html %}
+				
+				{% include widgets/calendar.html %}
 					
-
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<p class="gray">Calendar</p>
-						{% include events.html %}
-					</div>
-				</div>
 
 
 				<div class="panel panel-default">
