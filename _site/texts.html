@@ -108,31 +108,36 @@
 
 				<div class="panel panel-success">
 	<div class="panel-heading">
+		<!-- Start -->
 		<script type="text/javascript">
 		now = new Date();
 		hour = now.getHours();
-		
-		if (hour > 6) {
+		if (hour > 4 && hour < 7) {
+			document.write("You get up early today. :-)")
+		}
+		else if (hour < 12) {
 			document.write("Good morning! What a wonderful day! :-)")
 		}
-		else if (hour > 12) {
-			document.write("Good afternoon! Have you had lunch? :-)")
+		else if (hour < 18) {
+			document.write("Good afternoon! Have you had lunch, yet? :-)")
 		}
-		else if (hour > 18) {
+		else if (hour < 22) {
 			document.write("Good evening! Wanna have dinner together? :-)")
 		}
-		else if (hour > 23) {
+		else if (hour == 23) {
 			document.write("It's bed time! Don't stay up too late! :-)")
 		}
 		else {
 			document.write("Sweet dreams! :-)")
 		}
 		</script>
+		<!-- End -->
 	</div>
 </div>
 
 				<div class="panel panel-info">
 	<div class="panel-heading">
+		<!-- Start -->
 		<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
 			<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
 
@@ -150,6 +155,7 @@
 
 			<button type="submit" class="btn btn-xs btn-primary">Send</button>
 		</form>
+		<!-- End -->
 	</div>
 </div>
 
@@ -322,6 +328,7 @@ document.write(password());
 			<div class="col-sm-3 small">
 				<div class="panel panel-info">
 	<div class="panel-heading">
+		<!-- Start -->
 		<ul class="search pull-right">
 			<li class="active"><a href="#google" data-toggle="tab" aria-expanded="false">Google</a></li>
 			&sdot;
@@ -355,12 +362,14 @@ document.write(password());
 				</form>
 			</div>
 		</div>
+		<!-- End -->
 	</div>
 </div>
 				
 				<div class="panel panel-default">
 	<div class="panel-body">
-		<p class="gray">Calendar</p>
+		<p class="gray">To Do List</p>
+		<!-- Start -->
 		<ul class="nav nav-tabs">
 			<li class="active"><a href="#jul" data-toggle="tab" aria-expanded="false">July</a></li>
 
@@ -403,7 +412,7 @@ document.write(password());
 
 			<div class="tab-pane fade" id="apr">
 				<br>
-				<span class="glyphicon glyphicon-certificate"></span>
+				<input type="checkbox" checked>
 				LEED Green Associate &sdot;
 				<span class="gray">28 Apr 2017</span>
 			</div>
@@ -411,23 +420,23 @@ document.write(password());
 
 			<div class="tab-pane fade" id="may">
 				<br>
-				<span class="glyphicon glyphicon-certificate"></span>
+				<input type="checkbox" checked>
 				LEED AP BD+C &sdot;
 				<span class="gray">19 May 2017</span>
 			</div>
 
 
-			<div class="tab-pane fade active in" id="jun">
+			<div class="tab-pane fade" id="jun">
 				<br>
-				Vocabulary
+				<input type="checkbox" checked> Vocabulary
 			</div>
 
 
-			<div class="tab-pane fade" id="jul">
+			<div class="tab-pane fade active in" id="jul">
 				<br>
-				<span class="glyphicon glyphicon-edit"></span>
-				GRE Test &sdot;
-				<span class="gray">9 Jul 2017</span>
+				<p><input type="checkbox"> Vocabulary</p>
+				<p><input type="checkbox"> GRE Test &sdot;<span class="gray">9 Jul 2017</span></p>
+				<input type="checkbox"> Scoring System
 			</div>
 
 
@@ -452,8 +461,13 @@ document.write(password());
 				<br>
 			</div>
 		</div>
+		<!-- End -->
 	</div>
 </div>
+
+
+
+
 					
 
 
@@ -471,11 +485,10 @@ document.write(password());
 				</div>
 
 
-				
-					
 				<div class="panel panel-default">
 	<div class="panel-body">
 		<p class="gray">Music</p>
+		<!-- Start -->
 		<audio id="audio" preload="auto" tabindex="0" controls=""></audio>
 
 		<ol id="playlist">
@@ -511,6 +524,7 @@ document.write(password());
 			</li>
 			
 		</ol>
+		<!-- End -->
 	</div>
 </div>				
 
