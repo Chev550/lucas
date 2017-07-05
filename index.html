@@ -4,27 +4,54 @@ title: "Home"
 ---
 
 
-{% for post in paginator.posts %}
-<div class="panel {% if post.categories contains 'bookmarked' %}panel-danger{% else %}panel-default{% endif %}">
-	<div class="panel-heading">
-		{% if post.categories contains 'bookmarked' %}
-		<span class="glyphicon glyphicon-bookmark pull-right" style="color: #d9534f;"></span>
-		{% endif %}
-		<h3 class="panel-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-	</div>
 
-	<div class="panel-body">		
+{% for post in paginator.posts %}
+<div class="panel panel-default">
+	<!--======== Photo ========-->
+	{% if post.categories contains 'photo' %}
+	<div class="panel-body">
 		{{ post.content | strip_html | truncatewords:50 }}
 		<a href="{{ site.baseurl }}{{ post.url }}" class="small">More &raquo;</a>
 	</div>
-	
-	<div class="panel-footer small gray">
-		<span class="glyphicon glyphicon-time"></span>
-		{{ post.date | date_to_string }}
+
+	<div class="panel-body" style="padding: 0;">
+		<div class="my-gallery">
+			<figure>
+				<a href="{{ site.baseurl }}/assets/img/blog/{{ post.img }}" data-size="{{ post.size }}">
+					<img src="{{ site.baseurl }}/assets/img/blog/{{ post.img }}">
+				</a>
+				<figcaption>{{ post.content | strip_html | truncatewords:50 }}</figcaption>
+			</figure>
+		</div>
+	</div>
+
+	<!--======== Text ========-->
+	{% else %}
+	<div class="panel-body">
+		{% if post.categories contains 'bookmarked' %}
+		<span class="glyphicon glyphicon-bookmark pull-right" style="color: #d9534f;"></span>
+		{% endif %}
+
+		<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+		{{ post.content | strip_html | truncatewords:50 }}
+		<a href="{{ site.baseurl }}{{ post.url }}" class="small">More &raquo;</a>
+	</div>
+	{% endif %}
+
+	<!--======== Footer ========-->
+	<div class="panel-footer gray small">
+		<span class="glyphicon glyphicon-time"></span> {{ post.date | date_to_string }}
+
+		{% if post.categories contains 'photo' %}
+		&nbsp;
+		<span class="glyphicon glyphicon-retweet"></span> {{ post.size }}
+
+		{% else %}
 		&nbsp;
 		<span class="glyphicon glyphicon-tag"></span>
 		{% include post_tags.html %}
 		<!--a href="{{ site.baseurl }}{{ post.url }}#disqus_thread"></a-->
+		{% endif %}
 	</div>
 </div>
 {% endfor %}
@@ -61,3 +88,6 @@ title: "Home"
 		{% endif %}
 	</div>
 </div>
+
+
+{% include gallery.html %}

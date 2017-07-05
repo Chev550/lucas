@@ -1,0 +1,35 @@
+---
+layout: comment
+---
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="small gray">
+            <span class="glyphicon glyphicon-time"></span> {{ page.date | date_to_string }}
+            &nbsp;
+            <span class="glyphicon glyphicon-retweet"></span> {{ page.size }}
+        </div>
+    </div>
+
+    <div class="panel-body" style="padding: 0;">
+        <div class="my-gallery">
+            <figure>
+                <a href="{{ site.baseurl }}/assets/img/blog/{{ page.img }}" data-size="{{ page.size }}">
+                    <img src="{{ site.baseurl }}/assets/img/blog/{{ page.img }}">
+                </a>
+                <figcaption>{{ content | remove: '<p>' | remove: '</p>' }}</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="panel-body">
+        {{ content }}
+    </div>
+
+    <div class="panel-footer">
+        {% include pages.html %}
+    </div>
+</div>
+
+
+{% include gallery.html %}

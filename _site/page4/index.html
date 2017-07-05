@@ -75,7 +75,7 @@
 						</ul>
 					</li>
 
-					<!--li class=""><a href="/feedback.html">Feedback</a></li-->
+					<li class=""><a href="/feedback.html">Feedback</a></li>
 				</ul>
 
 
@@ -89,7 +89,7 @@
 						</ul>
 					</li>
 
-					<li><a href="/texts.html"><span class="glyphicon glyphicon-log-in"></span></a></li>
+					<!--li><a href="/texts.html"><span class="glyphicon glyphicon-log-in"></span></a></li-->
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div><!--/.container-fluid -->
@@ -142,7 +142,29 @@
 	</div>
 </div>
 
-				
+				<div class="panel panel-info">
+	<div class="panel-heading">
+		<!-- Start -->
+		<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+			<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
+
+			<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
+
+			<p>
+				<input type="checkbox" onclick="reply(this)"> Need a reply
+				&nbsp;
+				<input type="checkbox" onclick="attach(this)"> Attach a file
+			</p>
+
+			<p id="email-phone"><input type="text" name="Reply to" class="form-control" placeholder="Your email or phone"></p>
+			
+			<p id="attachment"><input type="file" class="form-control"></p>
+
+			<button type="submit" class="btn btn-xs btn-primary">Send</button>
+		</form>
+		<!-- End -->
+	</div>
+</div>
 
 
 				<div class="panel panel-default">
@@ -158,19 +180,82 @@
 			<div class="col-sm-6">
 				
 <div class="panel panel-default">
-	<div class="panel-heading">
+	<!--======== Photo ========-->
+	
+	<div class="panel-body">
 		
-		<h3 class="panel-title"><a href="/2017/04/22/installing-mysql-on-macos.html">Installing MySQL on MacOS</a></h3>
-	</div>
 
-	<div class="panel-body">		
+		<h4><a href="/2017/04/22/setting-up-a-custom-domain-for-your-github-site.html">Setting up a custom domain for your GitHub site</a></h4>
+		Configure the custom domain on your GitHub Pages site1: On GitHub, navigate to your GitHub Pages site’s repository. Under your repository name, click Settings. Under “Custom domain”, add or remove your custom domain and click Save. Set up your custom domain with your DNS provider, depending on the type of...
+		<a href="/2017/04/22/setting-up-a-custom-domain-for-your-github-site.html" class="small">More &raquo;</a>
+	</div>
+	
+
+	<!--======== Footer ========-->
+	<div class="panel-footer gray small">
+		<span class="glyphicon glyphicon-time"></span> 22 Apr 2017
+
+		
+		&nbsp;
+		<span class="glyphicon glyphicon-tag"></span>
+		
+
+
+<span class="post-tags"><a href="/tags/#GitHub">#GitHub</a></span>
+
+		<!--a href="/2017/04/22/setting-up-a-custom-domain-for-your-github-site.html#disqus_thread"></a-->
+		
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<!--======== Photo ========-->
+	
+	<div class="panel-body">
+		
+
+		<h4><a href="/2017/04/22/making-the-connection-to-mysql-with-java.html">Making the connection to MySQL with Java</a></h4>
+		Java has libraries for connecting to and working with SQL databases built right in to the standard Java SDK. This article assumes some knowledge of Java, and that you’re here to figure out how to work with a database1. This is the code to connect to a MySQL database server...
+		<a href="/2017/04/22/making-the-connection-to-mysql-with-java.html" class="small">More &raquo;</a>
+	</div>
+	
+
+	<!--======== Footer ========-->
+	<div class="panel-footer gray small">
+		<span class="glyphicon glyphicon-time"></span> 22 Apr 2017
+
+		
+		&nbsp;
+		<span class="glyphicon glyphicon-tag"></span>
+		
+
+
+<span class="post-tags"><a href="/tags/#MySQL">#MySQL</a></span>,
+
+<span class="post-tags"><a href="/tags/#Java">#Java</a></span>
+
+		<!--a href="/2017/04/22/making-the-connection-to-mysql-with-java.html#disqus_thread"></a-->
+		
+	</div>
+</div>
+
+<div class="panel panel-default">
+	<!--======== Photo ========-->
+	
+	<div class="panel-body">
+		
+
+		<h4><a href="/2017/04/22/installing-mysql-on-macos.html">Installing MySQL on MacOS</a></h4>
 		Oracle’s MySQL is a popular open source relational database management system that is based on Structured Query Language (SQL). Installing MySQL on an Mac is easier than you might expect, particularly if you use the native installation package instead of the TAR package, which requires access and changes to the...
 		<a href="/2017/04/22/installing-mysql-on-macos.html" class="small">More &raquo;</a>
 	</div>
 	
-	<div class="panel-footer small gray">
-		<span class="glyphicon glyphicon-time"></span>
-		22 Apr 2017
+
+	<!--======== Footer ========-->
+	<div class="panel-footer gray small">
+		<span class="glyphicon glyphicon-time"></span> 22 Apr 2017
+
+		
 		&nbsp;
 		<span class="glyphicon glyphicon-tag"></span>
 		
@@ -179,23 +264,27 @@
 <span class="post-tags"><a href="/tags/#MySQL">#MySQL</a></span>
 
 		<!--a href="/2017/04/22/installing-mysql-on-macos.html#disqus_thread"></a-->
+		
 	</div>
 </div>
 
 <div class="panel panel-default">
-	<div class="panel-heading">
+	<!--======== Photo ========-->
+	
+	<div class="panel-body">
 		
-		<h3 class="panel-title"><a href="/2017/04/16/pagination.html">Pagination</a></h3>
-	</div>
 
-	<div class="panel-body">		
+		<h4><a href="/2017/04/16/pagination.html">Pagination</a></h4>
 		With many websites, especially blogs, it’s very common to break the main listing of posts up into smaller lists and display them over multiple pages. Jekyll offers a pagination plugin, so you can automatically generate the appropriate files and folders you need for paginated listings1. For Jekyll 3, include the...
 		<a href="/2017/04/16/pagination.html" class="small">More &raquo;</a>
 	</div>
 	
-	<div class="panel-footer small gray">
-		<span class="glyphicon glyphicon-time"></span>
-		16 Apr 2017
+
+	<!--======== Footer ========-->
+	<div class="panel-footer gray small">
+		<span class="glyphicon glyphicon-time"></span> 16 Apr 2017
+
+		
 		&nbsp;
 		<span class="glyphicon glyphicon-tag"></span>
 		
@@ -204,23 +293,27 @@
 <span class="post-tags"><a href="/tags/#Jekyll">#Jekyll</a></span>
 
 		<!--a href="/2017/04/16/pagination.html#disqus_thread"></a-->
+		
 	</div>
 </div>
 
 <div class="panel panel-default">
-	<div class="panel-heading">
+	<!--======== Photo ========-->
+	
+	<div class="panel-body">
 		
-		<h3 class="panel-title"><a href="/2016/05/11/group-posts-by-year.html">Group posts by year</a></h3>
-	</div>
 
-	<div class="panel-body">		
+		<h4><a href="/2016/05/11/group-posts-by-year.html">Group posts by year</a></h4>
 		Here is the code template I am using to make a chronological archive1. {% for post in site.categories.[page.category] %} {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %} {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %} {% if forloop.first %} &lt;p&gt;{{ year }}&lt;/p&gt;&lt;ul&gt; {% elsif...
 		<a href="/2016/05/11/group-posts-by-year.html" class="small">More &raquo;</a>
 	</div>
 	
-	<div class="panel-footer small gray">
-		<span class="glyphicon glyphicon-time"></span>
-		11 May 2016
+
+	<!--======== Footer ========-->
+	<div class="panel-footer gray small">
+		<span class="glyphicon glyphicon-time"></span> 11 May 2016
+
+		
 		&nbsp;
 		<span class="glyphicon glyphicon-tag"></span>
 		
@@ -229,31 +322,7 @@
 <span class="post-tags"><a href="/tags/#Jekyll">#Jekyll</a></span>
 
 		<!--a href="/2016/05/11/group-posts-by-year.html#disqus_thread"></a-->
-	</div>
-</div>
-
-<div class="panel panel-default">
-	<div class="panel-heading">
 		
-		<h3 class="panel-title"><a href="/2016/03/20/previous-next-post-within-a-category.html">Previous/next post within a category</a></h3>
-	</div>
-
-	<div class="panel-body">		
-		If your blog lists all posts in only one section, you can always use {{post.previous.url}} and {{post.next.url}} to make links to previous and next posts1. However, sometimes we group our posts in defferent sections by category. In this case, post.previous and post.next are no longer handy to navigate because they...
-		<a href="/2016/03/20/previous-next-post-within-a-category.html" class="small">More &raquo;</a>
-	</div>
-	
-	<div class="panel-footer small gray">
-		<span class="glyphicon glyphicon-time"></span>
-		20 Mar 2016
-		&nbsp;
-		<span class="glyphicon glyphicon-tag"></span>
-		
-
-
-<span class="post-tags"><a href="/tags/#Jekyll">#Jekyll</a></span>
-
-		<!--a href="/2016/03/20/previous-next-post-within-a-category.html#disqus_thread"></a-->
 	</div>
 </div>
 
@@ -286,14 +355,85 @@
 			<em>4</em>
 			
 			
+			
+			<a href="page5">5</a>
+			
+			
 
 			
-			<span class="btn btn-xs btn-default disabled">Next &raquo;</span>
+			<a class="btn btn-xs btn-default" href="/page5">Next &raquo;</a>
 			
 		</div>
 		
 	</div>
 </div>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<!-- Background of PhotoSwipe. 
+    It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/assets/js/photoswipe.my.js"></script>
+
 			</div>
 
 
@@ -549,18 +689,6 @@ function run(link, player){
 						<a href="http://www.purdue.edu" target="_blank"><img src="/assets/img/logo_purdue.png"></a>
 
 						<a href="http://www.tongji.edu.cn" target="_blank"><img src="/assets/img/logo_tongji.png"></a>
-					</div>
-				</div>
-
-
-				<div class="panel panel-default">
-					<div class="panel-body social-icon">
-						<p class="gray">Follow Me</p>
-						<a href="https://www.facebook.com/lucaslionline" target="_blank"><img src="/assets/img/icon_facebook.png"></a>
-
-						<a href="http://www.linkedin.com/in/lucaslionline/" target="_blank"><img src="/assets/img/icon_linkedin.png"></a>
-
-						<a href="https://www.instagram.com/lucaslionline/" target="_blank"><img src="/assets/img/icon_instagram.png"></a>
 					</div>
 				</div>
 			</div>

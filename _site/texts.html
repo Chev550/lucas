@@ -75,7 +75,7 @@
 						</ul>
 					</li>
 
-					<!--li class=""><a href="/feedback.html">Feedback</a></li-->
+					<li class=""><a href="/feedback.html">Feedback</a></li>
 				</ul>
 
 
@@ -89,7 +89,7 @@
 						</ul>
 					</li>
 
-					<li><a href="/texts.html"><span class="glyphicon glyphicon-log-in"></span></a></li>
+					<!--li><a href="/texts.html"><span class="glyphicon glyphicon-log-in"></span></a></li-->
 				</ul>
 			</div><!--/.nav-collapse -->
 		</div><!--/.container-fluid -->
@@ -142,7 +142,29 @@
 	</div>
 </div>
 
-				
+				<div class="panel panel-info">
+	<div class="panel-heading">
+		<!-- Start -->
+		<form role="form" action="https://getsimpleform.com/messages?form_api_token=bce4fd8160c05984e7d1506b0bfe3a63" method="post" enctype="multipart/form-data">
+			<input type='hidden' name='redirect_to' value='https://lucaslionline.github.io/lucas/sent.html' />
+
+			<p><textarea name="Message" rows="5" class="form-control" placeholder="Feel free to say hi!" required></textarea></p>
+
+			<p>
+				<input type="checkbox" onclick="reply(this)"> Need a reply
+				&nbsp;
+				<input type="checkbox" onclick="attach(this)"> Attach a file
+			</p>
+
+			<p id="email-phone"><input type="text" name="Reply to" class="form-control" placeholder="Your email or phone"></p>
+			
+			<p id="attachment"><input type="file" class="form-control"></p>
+
+			<button type="submit" class="btn btn-xs btn-primary">Send</button>
+		</form>
+		<!-- End -->
+	</div>
+</div>
 
 
 				<div class="panel panel-default">
@@ -171,157 +193,7 @@ document.write(password());
 
 <div class="my-gallery">
 	
-	<div class="panel panel-default">
-		
-		<div class="panel-body">
-			得到一件东西的最好方式：让自己配得上它。
-		</div>
-		
-
-		
-		<div class="panel-body" style="padding: 0;">
-			<figure>
-				<a href="/assets/img/blog/img_3.jpg" data-size="1024x1024">
-					<img src="/assets/img/blog/img_3.jpg">
-				</a>
-				<figcaption>得到一件东西的最好方式：让自己配得上它。</figcaption>
-			</figure>
-		</div>
-		
-
-		<div class="panel-footer gray small">
-			<span class="glyphicon glyphicon-time"></span> 27 Jun 2017
-			&nbsp;
-			<span class="glyphicon glyphicon-map-marker"></span> National Library of China
-			&nbsp;
-			<span class="glyphicon glyphicon-retweet"></span> 1024x1024
-		</div>
-	</div>
-	
-	<div class="panel panel-default">
-		
-		<div class="panel-body">
-			既然选择了远方，便只顾风雨兼程。
-		</div>
-		
-
-		
-		<div class="panel-body" style="padding: 0;">
-			<figure>
-				<a href="/assets/img/blog/img_2.jpg" data-size="1024x1024">
-					<img src="/assets/img/blog/img_2.jpg">
-				</a>
-				<figcaption>既然选择了远方，便只顾风雨兼程。</figcaption>
-			</figure>
-		</div>
-		
-
-		<div class="panel-footer gray small">
-			<span class="glyphicon glyphicon-time"></span> 26 Jun 2017
-			&nbsp;
-			<span class="glyphicon glyphicon-map-marker"></span> Beijing
-			&nbsp;
-			<span class="glyphicon glyphicon-retweet"></span> 1024x1024
-		</div>
-	</div>
-	
-	<div class="panel panel-default">
-		
-		<div class="panel-body">
-			Some of us get dipped in flat, some in satin, some in gloss. But every once in a while, you find someone who's iridescent, and when you do, nothing will ever compare.
-		</div>
-		
-
-		
-		<div class="panel-body" style="padding: 0;">
-			<figure>
-				<a href="/assets/img/blog/img_1.jpg" data-size="1024x768">
-					<img src="/assets/img/blog/img_1.jpg">
-				</a>
-				<figcaption>Some of us get dipped in flat, some in satin, some in gloss. But every once in a while, you find someone who's iridescent, and when you do, nothing will ever compare.</figcaption>
-			</figure>
-		</div>
-		
-
-		<div class="panel-footer gray small">
-			<span class="glyphicon glyphicon-time"></span> 2 Jul 2016
-			&nbsp;
-			<span class="glyphicon glyphicon-map-marker"></span> Shanghai
-			&nbsp;
-			<span class="glyphicon glyphicon-retweet"></span> 1024x768
-		</div>
-	</div>
-	
 </div>
-
-
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-<!-- Background of PhotoSwipe. 
-    It's a separate element, as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="/assets/js/photoswipe.my.js"></script>
-
 			</div>
 
 
@@ -577,18 +449,6 @@ function run(link, player){
 						<a href="http://www.purdue.edu" target="_blank"><img src="/assets/img/logo_purdue.png"></a>
 
 						<a href="http://www.tongji.edu.cn" target="_blank"><img src="/assets/img/logo_tongji.png"></a>
-					</div>
-				</div>
-
-
-				<div class="panel panel-default">
-					<div class="panel-body social-icon">
-						<p class="gray">Follow Me</p>
-						<a href="https://www.facebook.com/lucaslionline" target="_blank"><img src="/assets/img/icon_facebook.png"></a>
-
-						<a href="http://www.linkedin.com/in/lucaslionline/" target="_blank"><img src="/assets/img/icon_linkedin.png"></a>
-
-						<a href="https://www.instagram.com/lucaslionline/" target="_blank"><img src="/assets/img/icon_instagram.png"></a>
 					</div>
 				</div>
 			</div>

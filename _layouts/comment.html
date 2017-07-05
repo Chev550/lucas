@@ -8,30 +8,10 @@
 	<div class="container">
 		{% include header.html %}
 
+
 		<div class="row">
 			<div class="col-sm-8">
-				<div class="panel panel-info">
-					<div class="panel-heading">
-						<h4>{{ page.title }}</h4>
-						<span class="gray small">
-							{{ page.date | date_to_string }} &sdot;
-							{% include post_tags.html %}
-						</span>
-					</div>
-				</div>
-
-
-				<div class="panel panel-default">
-					<div class="panel-body">
-						{{ content }}
-					</div>
-				</div>
-
-				<div class="panel panel-default">
-					<div class="panel-body">
-						{% include pages.html %}
-					</div>
-				</div>
+				{{ content }}
 			</div>
 
 
