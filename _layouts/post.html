@@ -2,13 +2,14 @@
 layout: default
 ---
 
-
-
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h4>{{ page.title }}</h4>
 		<span class="gray small">
-			{{ page.date | date_to_string }} &sdot;
+			<span class="glyphicon glyphicon-time"></span>
+			{{ page.date | date_to_string }}
+			&nbsp;
+		<span class="glyphicon glyphicon-tag"></span>
 			{% include post_tags.html %}
 		</span>
 	</div>
